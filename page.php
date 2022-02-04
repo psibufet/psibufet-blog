@@ -1,6 +1,6 @@
 <?php
 /*
- * This page display single page
+ * This page display single page test
  */
 
 get_header();
