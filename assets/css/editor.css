@@ -1,0 +1,290 @@
+.editor-styles-wrapper p,
+#editor .editor-styles-wrapper,
+.block-editor__container .editor-styles-wrapper .mce-content-body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.7;
+}
+
+.wp-block strong {
+    font-weight: 700;
+}
+
+.editor-styles-wrapper .editor-post-title__block .editor-post-title__input {
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    font-family: 'Playfair Display', serif !important;
+    color: #111;
+}
+
+@media all and (min-width: 1200px) {
+    .editor-styles-wrapper .wp-block {
+        max-width: 752px;
+        width: 100%;
+    }
+}
+
+.editor-styles-wrapper .wp-block h1 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 42px;
+    line-height: 46px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .wp-block h2 {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 42px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .wp-block h3 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 28px;
+    line-height: 34px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .wp-block h4 {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .wp-block h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .wp-block h6 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+.editor-styles-wrapper .block-library-list ol,
+.editor-styles-wrapper .block-library-list ul,
+.editor-styles-wrapper .wp-block ol,
+.editor-styles-wrapper .wp-block ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.editor-styles-wrapper ul li {
+    list-style: disc;
+}
+
+.editor-styles-wrapper li {
+    margin: 0 0 10px 25px;
+    padding: 0;
+}
+
+.wp-block-table {
+    text-align: left;
+}
+
+.editor-styles-wrapper .wp-block-quote {
+    margin-bottom: 40px;
+    padding-left: 50px;
+    border-left: 5px solid #111;
+}
+
+.wp-block-pullquote {
+    border: none;
+    position: relative;
+}
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.wp-block-quote p {
+    font-size: 18px;
+}
+
+.wp-block-quote__citation {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.wp-block-quote p, .wp-block-pullquote p {
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: inherit;
+    color: #111;
+}
+
+.wp-block-pullquote::before {
+    content: "”";
+    display: block;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    height: 44px;
+    width: 44px;
+    color: #111;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 1px solid;
+}
+
+.blocks-gallery-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+    color: #555d66;
+    font-size: 13px;
+    text-align: center;
+}
+
+.block-editor-rich-text__editable a,
+.wp-block a {
+    color: inherit;
+}
+
+.wp-block-cover, .wp-block-cover-image {
+    color: #fff;
+    line-height: 1.25;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.wp-block-cover p:last-child {
+    margin-bottom: 0;
+}
+
+.wp-block-button, .wp-block-gallery,
+.wp-block-video, .wp-block-audio {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-align="full"] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-editor__container pre {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-family: monospace, monospace;
+}
+
+.wp-block-latest-posts li,
+.wp-block-categories li,
+.wp-block-archives li {
+    list-style: none !important;
+    max-width: 320px;
+    text-align: left;
+    margin-left: 0;
+}
+
+.wp-block-latest-posts a,
+.wp-block-categories a,
+.wp-block-archives a {
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(24, 24, 24, .05);
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+.wp-block-categories li {
+    position: relative;
+}
+
+.wp-block-categories__post-count {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    line-height: 14px;
+    margin-top: -7px;
+}
+
+.wp-block-latest-posts > li:last-child > a,
+.wp-block-categories > ul > li:last-child > a,
+.wp-block-archives > li:last-child > a {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.wp-block-categories li ul {
+    margin-left: 20px !important;
+    margin-top: 10px !important;
+}
+
+.wp-block-cover a,
+.wp-block-cover-image a {
+    font-weight: 700;
+}
+
+.wp-block-cover-image .wp-block-cover-image-text,
+.wp-block-cover .wp-block-cover-text, section.wp-block-cover-image > h2 {
+    line-height: 1.25;
+}
+
+.wp-block-media-text {
+    font-size: 18px;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+
+.wp-block-button__link {
+    background-color: #111;
+}
+
+.edit-post-header-toolbar {
+    flex-grow: unset;
+}
+
+.edit-post-layout__metaboxes .edit-post-layout__metaboxes:not(:empty) .edit-post-meta-boxes-area {
+    margin: auto;
+    width: 90%;
+}
+
+.edit-post-layout__metaboxes .rwmb-meta-box>*:nth-child(2n+1) {
+    background-color: #f7f7f7;
+}
+
+.edit-post-layout__metaboxes .postbox-header {
+    margin: 14px 14px 0 14px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-bottom: 3px solid;
+}
+
+.edit-post-layout__metaboxes #poststuff .inside {
+    margin-top: 0;
+}
+
+.edit-post-layout__metaboxes .rwmb-label {
+    padding-left: 37px;
+}
+
+div#rbc-global-meta .postbox-header {
+    display: none;
+}
+
+#look_ruby_metabox_composer_options:not(.is-show) {
+    display: none;
+}
