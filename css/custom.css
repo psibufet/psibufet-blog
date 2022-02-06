@@ -120,6 +120,53 @@ body {
   display: none !important;
 }
 
+.mainAbout {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+}
+
+.mainAbout__wrap {
+  padding: 0 20px;
+}
+
+.mainAbout__wrap h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.mainAbout__wrap .content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.mainAbout__wrap .content p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #000;
+  text-align: center;
+}
+
+.mainAbout__wrap .content p a {
+  color: #f15748;
+  transition: ease .3s;
+}
+
+.mainAbout__wrap .content p a:hover {
+  opacity: .7;
+}
+
+@media (max-width: 767px) {
+  .mainAbout__wrap h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
 .siteFooter {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }

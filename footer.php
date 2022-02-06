@@ -6,6 +6,14 @@
 </div>
 <?php // get_template_part( 'templates/section', 'footer' ); ?>
 
+    <div class="mainAbout">
+        <div class="mainAbout__wrap container">
+            <h2>O PsiBufet</h2>
+            <div class="content">
+                <?php echo get_field('about_text', 2647); ?>
+            </div>
+        </div>
+    </div>
     <footer id="siteFooter" class="siteFooter">
         <div class="siteFooter__wrap">
             <div class="siteFooter__logo">
