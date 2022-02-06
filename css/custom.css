@@ -771,6 +771,54 @@ body.search-no-results .search-page-header {
   }
 }
 
+body.single-post .single-header .post-cat-info a {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+body.single-post .single-header .entry-header h1 {
+  font-size: 36px;
+  line-height: 46px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+
+body.single-post .post-content {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+body.single-post .post-content p a,
+body.single-post .post-content li a,
+body.single-post .post-content span a {
+  color: #f15748 !important;
+  transition: ease .3s;
+}
+
+body.single-post .post-content p a:hover,
+body.single-post .post-content li a:hover,
+body.single-post .post-content span a:hover {
+  color: #fb6659 !important;
+}
+
+body.single-post .post-content h1,
+body.single-post .post-content h2,
+body.single-post .post-content h3,
+body.single-post .post-content h4,
+body.single-post .post-content h5,
+body.single-post .post-content h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  color: #000;
+}
+
+#dpsp-content-bottom a {
+  color: #fff !important;
+}
+
 .btn {
   display: inline-block;
   width: 175px;
