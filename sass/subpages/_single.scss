@@ -47,6 +47,22 @@ body.single-post{
         }
     }
 }
+@media (max-width: 991px){
+    body.single-post{
+        .post-content{
+            &>p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &>ul{
+                li{
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
 
 #dpsp-content-bottom{
     a{

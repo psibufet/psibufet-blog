@@ -238,6 +238,7 @@ if ( ! class_exists( 'look_ruby_template_single' ) ) {
 			echo '<footer class="article-footer">';
 			get_template_part( 'templates/single/box', 'tag' );
 			get_template_part( 'templates/single/box', 'like' );
+			get_template_part( 'templates/single/box', 'newsletter' );
 			echo '</footer>';
 			get_template_part( 'templates/meta/el', 'meta_footer' );
 			echo '<div class="clearfix"></div>';
