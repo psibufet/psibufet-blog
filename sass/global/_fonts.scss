@@ -1,0 +1,31 @@
+/**
+ *  Bebas Neue
+ */
+@font-face {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    src: url('/wp-content/themes/look/fonts/BebasNeue/BebasNeue-Regular.ttf') format("truetype");
+}
+
+/**
+ *  Roboto
+ */
+@font-face {
+	font-family: "Roboto";
+	font-weight: 400;
+	src: url('/wp-content/themes/look/fonts/Roboto/Roboto-Regular.ttf') format("truetype");
+}
+@font-face {
+	font-family: "Roboto";
+	font-weight: 500;
+	src: url('/wp-content/themes/look/fonts/Roboto/Roboto-Medium.ttf') format("truetype");
+}
+@font-face {
+	font-family: "Roboto";
+	font-weight: 700;
+	src: url('/wp-content/themes/look/fonts/Roboto/Roboto-Bold.ttf') format("truetype");
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}

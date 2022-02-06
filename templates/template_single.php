@@ -127,7 +127,7 @@ if ( ! class_exists( 'look_ruby_template_single' ) ) {
 				echo '</span>';
 			} else {
 				echo '<span class="single-share-bar-total share-bar-total">';
-				echo '<span class="share-bar-total-text">' . esc_html__( 'share', 'look' ) . '</span>';
+				echo '<span class="share-bar-total-text">' . esc_html__( 'udostępnij', 'look' ) . '</span>';
 				echo '</span>';
 			}
 			echo '<div class="single-share-bar-inner">';

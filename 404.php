@@ -1,14 +1,15 @@
 <?php
 get_header(); ?>
 
-<div id="main-content-wrap ruby-page-404" class="row clearfix">
+<div id="main-content-wrap ruby-page-404" class="row clearfix page404">
 	<div class="ruby-container">
 		<div class="page-404-content-wrap">
 			<div class="page-404-content-header">
-				<div class="logo-404 post-title"><h1><?php esc_html_e( '404', 'look' ); ?></h1></div>
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'look' ); ?></p>
+				<img src="<?php echo get_template_directory_uri() . '/assets/images/404_dog.svg'; ?>"/>
+				<h1>Psiepraszamy. Nie ma takiej strony. Szukaj dalej!</h1>
 			</div>
 			<?php get_search_form( true ); ?>
+			<a href="#" class="btn btn--back btn--white"><span>Wróć do bloga</span></a>
 		</div>
 	</div>
 </div>

@@ -165,14 +165,14 @@ if ( ! class_exists( 'look_ruby_template_part' ) ) {
 
 				echo '<span class="share-bar-total">';
 				if ( 1 == $total || 0 == $total ) {
-					esc_html_e( 'share', 'look' );
+					esc_html_e( 'udostępnij', 'look' );
 				} else {
 					echo intval( $total_share['all'] ) . ' ' . esc_html__( 'shares', 'look' );
 				}
 				echo '</span>';
 			} else {
 				echo '<span class="share-bar-total">';
-				esc_html_e( 'share', 'look' );
+				esc_html_e( 'udostępnij', 'look' );
 				echo '</span>';
 			}
 

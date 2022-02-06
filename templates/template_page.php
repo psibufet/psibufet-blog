@@ -152,19 +152,20 @@ if ( ! function_exists( 'look_ruby_render_page_header_search' ) ) {
 if ( ! function_exists( 'look_ruby_render_search_not_found' ) ) {
 	function look_ruby_render_search_not_found() {
 
-		$str = '';
-		$str .= '<div id="main-content-wrap" class="row clearfix">';
-		$str .= '<div class="ruby-container">';
-		$str .= '<div class="search-no-result-content">';
-		$str .= '<div class="search-no-result post-title">';
-		$str .= '<h3>' . esc_html__( 'Oops! It looks like nothing was found!', 'look' ) . '</h3>';
-		$str .= '</div>';
-		$str .= '<p>' . esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'look' ) . '</p>';
-		$str .= get_search_form( false );
-		$str .= '</div>';
-		$str .= '</div>';
-		$str .= '</div>';
+		get_template_part( 'templates/section', 'not_found' );
+		// $str = '';
+		// $str .= '<div id="main-content-wrap" class="row clearfix">';
+		// $str .= '<div class="ruby-container">';
+		// $str .= '<div class="search-no-result-content">';
+		// $str .= '<div class="search-no-result post-title">';
+		// $str .= '<h3>' . esc_html__( 'Oops! It looks like nothing was found!', 'look' ) . '</h3>';
+		// $str .= '</div>';
+		// $str .= '<p>' . esc_html__( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'look' ) . '</p>';
+		// $str .= get_search_form( false );
+		// $str .= '</div>';
+		// $str .= '</div>';
+		// $str .= '</div>';
 
-		return $str;
+		// return $str;
 	}
 }

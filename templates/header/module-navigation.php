@@ -2,7 +2,7 @@
 	<div class="header-nav-inner">
 		<div class="ruby-container">
 			<div class="header-nav-holder clearfix">
-				<?php get_template_part( 'templates/header/module', 'off_canvas_btn' ); ?>
+				<?php get_template_part( 'templates/header/module', 'nav_search_icon' ); ?>
 				<nav id="navigation" class="main-nav-wrap" <?php look_ruby_schema::markup( 'navigation', true ); ?>>
 					<?php wp_nav_menu(
 						array(
@@ -18,7 +18,7 @@
 					); ?>
 				</nav>
 				<?php get_template_part( 'templates/header/module', 'logo_mobile' ); ?>
-				<?php get_template_part( 'templates/header/module', 'nav_search_icon' ); ?>
+				<?php get_template_part( 'templates/header/module', 'off_canvas_btn' ); ?>
 			</div>
 		</div>
 	</div>

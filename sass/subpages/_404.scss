@@ -1,0 +1,46 @@
+.page404{
+    margin: 0 0 32px;
+
+    .page-404-content-wrap{
+        margin: 0;
+
+        .page-404-content-header{
+            img{
+                max-width: 196px;
+                margin: 0 auto 30px;
+            }
+            h1{
+                font-size: 36px;
+                line-height: 46px;
+                font-family: 'Bebas Neue', sans-serif;
+                font-weight: 400;
+                color: #000;
+                text-align: center;
+                margin: 0 0 40px;
+            }
+        }
+        .btn{
+            margin: 40px auto 0;
+        }
+    }
+}
+@media (max-width: 767px){
+    .page404{
+        .page-404-content-wrap{
+            .page-404-content-header{
+                img{
+                    max-width: 115px;
+                }
+                h1{
+                    font-size: 26px;
+                    line-height: 32px;
+                    max-width: 360px;
+                    margin: 0 auto 20px;
+                }
+            }
+            .btn{
+                margin: 20px auto 0;
+            }
+        }
+    }
+}

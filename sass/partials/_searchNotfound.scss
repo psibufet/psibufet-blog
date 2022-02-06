@@ -1,0 +1,7 @@
+body{
+    &.search-no-results{
+        .search-page-header{
+            display: none !important;
+        }
+    }
+}
