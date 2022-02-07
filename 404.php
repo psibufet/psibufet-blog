@@ -9,7 +9,7 @@ get_header(); ?>
 				<h1>Psiepraszamy. Nie ma takiej strony. Szukaj dalej!</h1>
 			</div>
 			<?php get_search_form( true ); ?>
-			<a href="#" class="btn btn--back btn--white"><span>Wróć do bloga</span></a>
+			<a href="<?php echo get_home_url(); ?>" class="btn btn--back btn--white"><span>Wróć do bloga</span></a>
 		</div>
 	</div>
 </div>
