@@ -96,6 +96,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 60px;
+  width: 235px;
+}
+
+.header-nav-holder .nav-search-wrap #ruby-nav-search {
+  display: none;
+}
+
+.header-nav-holder .nav-search-wrap .searchBar {
+  max-width: 100%;
+  margin: 0;
+}
+
+.header-nav-holder .nav-search-wrap .searchBar form {
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 991px) {
@@ -103,6 +117,13 @@ body {
     height: 40px;
     left: 0;
     right: auto;
+    width: 42px;
+  }
+  .header-nav-holder .nav-search-wrap #ruby-nav-search {
+    display: block;
+  }
+  .header-nav-holder .nav-search-wrap .searchBar {
+    display: none;
   }
   .header-nav-holder .off-canvas-btn {
     left: auto;
@@ -118,6 +139,29 @@ body {
  */
 .off-canvas-wrap ul.off-canvas-nav-inner li.menu-order {
   display: none !important;
+}
+
+/**
+ *  Search popup
+ */
+#ruby-banner-search-form .ruby-search {
+  margin: 0 auto;
+}
+
+#ruby-banner-search-form .ruby-search .ruby-search-submit {
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+#ruby-banner-search-form .ruby-search .ruby-search-submit i {
+  font-size: inherit;
+}
+
+#ruby-banner-search-form .ruby-search .ruby-search-input input[type="text"] {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .mainAbout {
