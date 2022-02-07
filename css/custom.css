@@ -725,28 +725,33 @@ body.search-no-results .search-page-header {
   display: none !important;
 }
 
-.block-content-wrap article .is-left-col {
+.block-content-wrap article .is-left-col,
+.blog-content-wrap article .is-left-col {
   display: flex;
   width: 252px;
   min-height: 235px;
 }
 
-.block-content-wrap article .is-left-col .post-thumb {
+.block-content-wrap article .is-left-col .post-thumb,
+.blog-content-wrap article .is-left-col .post-thumb {
   height: 100%;
 }
 
-.block-content-wrap article .is-left-col .post-thumb a span img {
+.block-content-wrap article .is-left-col .post-thumb a span img,
+.blog-content-wrap article .is-left-col .post-thumb a span img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.block-content-wrap article .is-right-col {
+.block-content-wrap article .is-right-col,
+.blog-content-wrap article .is-right-col {
   width: calc(100% - 272px);
   padding-left: 0 !important;
 }
 
-.block-content-wrap article .is-right-col .post-header .post-header-meta .post-cat-info a {
+.block-content-wrap article .is-right-col .post-header .post-header-meta .post-cat-info a,
+.blog-content-wrap article .is-right-col .post-header .post-header-meta .post-cat-info a {
   font-size: 14px;
   line-height: 19px;
   font-family: 'Roboto', sans-serif;
@@ -756,16 +761,19 @@ body.search-no-results .search-page-header {
   letter-spacing: normal;
 }
 
-.block-content-wrap article .is-right-col .post-header .post-header-meta .post-meta-info {
+.block-content-wrap article .is-right-col .post-header .post-header-meta .post-meta-info,
+.blog-content-wrap article .is-right-col .post-header .post-header-meta .post-meta-info {
   display: none !important;
 }
 
-.block-content-wrap article .is-right-col .post-header .entry-header h3 {
+.block-content-wrap article .is-right-col .post-header .entry-header h3,
+.blog-content-wrap article .is-right-col .post-header .entry-header h3 {
   line-height: 32px;
   margin: 0 0 8px;
 }
 
-.block-content-wrap article .is-right-col .post-header .entry-header h3 a {
+.block-content-wrap article .is-right-col .post-header .entry-header h3 a,
+.blog-content-wrap article .is-right-col .post-header .entry-header h3 a {
   font-size: 28px;
   line-height: inherit;
   font-family: 'Bebas Neue', sans-serif;
@@ -773,7 +781,8 @@ body.search-no-results .search-page-header {
   color: #000;
 }
 
-.block-content-wrap article .is-right-col .post-excerpt p {
+.block-content-wrap article .is-right-col .post-excerpt p,
+.blog-content-wrap article .is-right-col .post-excerpt p {
   font-size: 14px;
   line-height: 24px;
   font-family: 'Roboto', sans-serif;
@@ -781,11 +790,13 @@ body.search-no-results .search-page-header {
   text-align: justify;
 }
 
-.block-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner {
+.block-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner,
+.blog-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner {
   border: 0;
 }
 
-.block-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner:before {
+.block-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner:before,
+.blog-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner:before {
   content: '';
   background-image: url("../assets/images/icons/share_ico.svg");
   background-repeat: no-repeat;
@@ -794,7 +805,8 @@ body.search-no-results .search-page-header {
   height: 32px;
 }
 
-.block-content-wrap article .is-right-col .article-footer .post-share-bar .share-bar-total {
+.block-content-wrap article .is-right-col .article-footer .post-share-bar .share-bar-total,
+.blog-content-wrap article .is-right-col .article-footer .post-share-bar .share-bar-total {
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
