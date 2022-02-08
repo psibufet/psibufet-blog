@@ -74,6 +74,17 @@
         }
     }
 }
+#sticky-wrapper{
+    &.ruby-is-stick{
+        .main-nav-inner{
+            &>li{
+                &.menu-order{
+                    height: 42px;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 991px){
     .header-nav-holder{

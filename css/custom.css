@@ -112,6 +112,10 @@ body {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
+#sticky-wrapper.ruby-is-stick .main-nav-inner > li.menu-order {
+  height: 42px;
+}
+
 @media (max-width: 991px) {
   .header-nav-holder .nav-search-wrap {
     height: 40px;
