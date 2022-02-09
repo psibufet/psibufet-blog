@@ -73,6 +73,10 @@
             }
         }
     }
+    .mobileSearch,
+    .mobileMenu{
+        display: none;
+    }
 }
 #sticky-wrapper{
     &.ruby-is-stick{
@@ -88,22 +92,59 @@
 
 @media (max-width: 991px){
     .header-nav-holder{
-        .nav-search-wrap{
-            height: 40px;
-            left: 0;
-            right: auto;
-            width: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60px;
 
-            #ruby-nav-search{
-                display: block;
-            }
-            .searchBar{
-                display: none;
+        &:before,
+        &:after,
+        .nav-search-wrap,
+        .off-canvas-btn-wrap{
+            display: none !important;
+        }
+
+        .header-logo-mobile-wrap{
+            min-height: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobileSearch{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: inherit;
+            width: 50px;
+
+            img{
+                width: 100%;
+                max-width: 28px;
             }
         }
-        .off-canvas-btn{
-            left: auto;
-            right: 0;
+        .mobileMenu{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: inherit;
+            width: 50px;
+
+            &.active{
+                img{
+                    display: none;
+
+                    &.close{
+                        display: block;
+                    }
+                }
+            }
+
+            img{
+                &.close{
+                    display: none;
+                }
+            }
         }
     }
     .header-outer{
@@ -114,11 +155,112 @@
 /**
  *  Mobile menu
  */
-.off-canvas-wrap{
-    ul.off-canvas-nav-inner{
-        li{
-            &.menu-order{
-                display: none !important;
+body.admin-bar{
+    .menuMobile{
+        top: 92px;
+        height: calc(100vh - 92px);
+
+        @media (max-width: 782px){
+            top: 106px;
+            height: calc(100vh - 106px);
+        }
+    }
+}
+
+#sticky-wrapper{
+    &.ruby-is-stick{
+        .menuMobile{
+            top: 60px !important;
+        }
+    }
+}
+
+.menuMobile{
+    background: #fff;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    position: fixed;
+    z-index: 999;
+    top: 60px;
+    right: -100vw;
+    padding: 12px 13px;
+    transition: ease 1s;
+
+    &--active{
+        right: 0;
+    }
+
+    @media (min-width: 992px){
+        display: none !important;
+    }
+
+    &__search{
+        max-width: 335px;
+        width: 100%;
+        margin: 0 auto 23px;
+    }
+    &__menu{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            li{
+                margin-bottom: 5vh;
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+
+                a{
+                    font-size: 21px;
+                    line-height: 24px;
+                    font-family: 'Roboto', sans-serif;
+                    color: #000;
+                    font-weight: 700;
+                    height: auto;
+                }
+
+                &.menu-order{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a{
+                        background-color: $pbred;
+                        height: 50px;
+                        line-height: 50px;
+                        color: #fff;
+                        position: relative;
+                        padding-right: 30px;
+                        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+                        min-width: 185px;
+                        text-align: center;
+
+                        &:hover{
+                            background-color: $pbredhover;
+
+                            &:after{
+                                right: 40px;
+                            }
+                        }
+
+                        &:after{
+                            content: '';
+                            background-image: url('../assets/images/icons/arrow_white.svg');
+                            background-repeat: no-repeat;
+                            background-size: 7px;
+                            width: 7px;
+                            height: 10px;
+                            position: absolute;
+                            right: 45px;
+                            top: 50%;
+                            transform: translate(0, -50%);
+                            transition: ease .3s;
+                        }
+                    }
+                }
             }
         }
     }

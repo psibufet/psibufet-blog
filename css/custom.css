@@ -112,26 +112,59 @@ body {
   box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
+.header-nav-holder .mobileSearch,
+.header-nav-holder .mobileMenu {
+  display: none;
+}
+
 #sticky-wrapper.ruby-is-stick .main-nav-inner > li.menu-order {
   height: 42px;
 }
 
 @media (max-width: 991px) {
-  .header-nav-holder .nav-search-wrap {
-    height: 40px;
-    left: 0;
-    right: auto;
-    width: 42px;
+  .header-nav-holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
   }
-  .header-nav-holder .nav-search-wrap #ruby-nav-search {
-    display: block;
+  .header-nav-holder:before, .header-nav-holder:after,
+  .header-nav-holder .nav-search-wrap,
+  .header-nav-holder .off-canvas-btn-wrap {
+    display: none !important;
   }
-  .header-nav-holder .nav-search-wrap .searchBar {
+  .header-nav-holder .header-logo-mobile-wrap {
+    min-height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-nav-holder .mobileSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+    width: 50px;
+  }
+  .header-nav-holder .mobileSearch img {
+    width: 100%;
+    max-width: 28px;
+  }
+  .header-nav-holder .mobileMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: inherit;
+    width: 50px;
+  }
+  .header-nav-holder .mobileMenu.active img {
     display: none;
   }
-  .header-nav-holder .off-canvas-btn {
-    left: auto;
-    right: 0;
+  .header-nav-holder .mobileMenu.active img.close {
+    display: block;
+  }
+  .header-nav-holder .mobileMenu img.close {
+    display: none;
   }
   .header-outer {
     margin: 0;
@@ -141,8 +174,112 @@ body {
 /**
  *  Mobile menu
  */
-.off-canvas-wrap ul.off-canvas-nav-inner li.menu-order {
-  display: none !important;
+body.admin-bar .menuMobile {
+  top: 92px;
+  height: calc(100vh - 92px);
+}
+
+@media (max-width: 782px) {
+  body.admin-bar .menuMobile {
+    top: 106px;
+    height: calc(100vh - 106px);
+  }
+}
+
+#sticky-wrapper.ruby-is-stick .menuMobile {
+  top: 60px !important;
+}
+
+.menuMobile {
+  background: #fff;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  position: fixed;
+  z-index: 999;
+  top: 60px;
+  right: -100vw;
+  padding: 12px 13px;
+  transition: ease 1s;
+}
+
+.menuMobile--active {
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .menuMobile {
+    display: none !important;
+  }
+}
+
+.menuMobile__search {
+  max-width: 335px;
+  width: 100%;
+  margin: 0 auto 23px;
+}
+
+.menuMobile__menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menuMobile__menu ul li {
+  margin-bottom: 5vh;
+}
+
+.menuMobile__menu ul li:last-of-type {
+  margin-bottom: 0;
+}
+
+.menuMobile__menu ul li a {
+  font-size: 21px;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-weight: 700;
+  height: auto;
+}
+
+.menuMobile__menu ul li.menu-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuMobile__menu ul li.menu-order a {
+  background-color: #f15748;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  position: relative;
+  padding-right: 30px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  min-width: 185px;
+  text-align: center;
+}
+
+.menuMobile__menu ul li.menu-order a:hover {
+  background-color: #fb6659;
+}
+
+.menuMobile__menu ul li.menu-order a:hover:after {
+  right: 40px;
+}
+
+.menuMobile__menu ul li.menu-order a:after {
+  content: '';
+  background-image: url("../assets/images/icons/arrow_white.svg");
+  background-repeat: no-repeat;
+  background-size: 7px;
+  width: 7px;
+  height: 10px;
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: ease .3s;
 }
 
 /**
@@ -594,7 +731,7 @@ body {
   height: 34px;
   padding: 0 30px 0 35px !important;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1) !important;
   font-size: 14px;
   color: #000;
   font-family: 'Roboto', sans-serif;
@@ -954,6 +1091,14 @@ body.single-post .post-content h6 {
 
 #dpsp-content-bottom a {
   color: #fff !important;
+}
+
+html.no-scroll {
+  overflow: hidden;
+}
+
+.main-site-outer {
+  overflow: hidden;
 }
 
 .btn {

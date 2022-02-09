@@ -21,6 +21,15 @@
 @import 'subpages/404';
 @import 'subpages/single';
 
+html{
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
+
+.main-site-outer{
+    overflow: hidden;
+}
 
 .btn{
     display: inline-block;

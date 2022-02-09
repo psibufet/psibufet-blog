@@ -3,6 +3,9 @@
 		<div class="ruby-container">
 			<div class="header-nav-holder clearfix">
 				<?php get_template_part( 'templates/header/module', 'nav_search_icon' ); ?>
+				<div class="mobileSearch">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/search_ico.svg'; ?>" />
+				</div>
 				<nav id="navigation" class="main-nav-wrap" <?php look_ruby_schema::markup( 'navigation', true ); ?>>
 					<?php wp_nav_menu(
 						array(
@@ -18,7 +21,12 @@
 					); ?>
 				</nav>
 				<?php get_template_part( 'templates/header/module', 'logo_mobile' ); ?>
-				<?php get_template_part( 'templates/header/module', 'off_canvas_btn' ); ?>
+				<div class="mobileMenu">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/menu_ico.svg'; ?>" />
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/icons/menu_close_ico.svg'; ?>" class="close" />
+				</div>
+				<?php // get_template_part( 'templates/header/module', 'off_canvas_btn' ); ?>
+				<?php get_template_part( 'templates/header/module', 'mobile_menu' ); ?>
 			</div>
 		</div>
 	</div>
