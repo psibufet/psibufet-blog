@@ -226,7 +226,7 @@ body.admin-bar .menuMobile {
 }
 
 .menuMobile__menu ul li {
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
 }
 
 .menuMobile__menu ul li:last-of-type {
