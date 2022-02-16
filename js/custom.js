@@ -15,7 +15,7 @@
             if(!$('.menuMobile').hasClass('menuMobile--active')){
                 $('.menuMobile').addClass('menuMobile--active');
                 $('html').addClass('no-scroll');
-                $(this).addClass('active');
+                $('.mobileMenu').addClass('active');
 
                 setTimeout(function(){
                     $('.menuMobile__search').find('input[name="s"]').focus();

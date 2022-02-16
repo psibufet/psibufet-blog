@@ -80,6 +80,11 @@
 }
 #sticky-wrapper{
     &.ruby-is-stick{
+        .header-nav-holder{
+            .nav-search-wrap{
+                height: 43px;
+            }   
+        }
         .main-nav-inner{
             &>li{
                 &.menu-order{

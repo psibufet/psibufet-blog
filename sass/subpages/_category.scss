@@ -1,0 +1,50 @@
+@media (max-width: 767px){
+    .blog-content-wrap{
+        article{
+            .is-left-col{
+                min-height: 0;
+                height: 140px;
+                width: 150px;
+            }
+            .is-right-col{
+                width: calc(100% - 170px);
+
+                .post-header{
+                    .post-header-meta{
+                        .post-cat-info{
+                            a{
+                                font-size: 12px;
+                                line-height: 14px;
+                            }
+                        }
+                    }
+                    .entry-header{
+                        h3{
+                            line-height: 24px;
+
+                            a{
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                }
+
+                .post-excerpt{
+                    display: none;
+                }
+
+                .article-footer{
+                    .post-share-bar{
+                        .post-share-bar-inner{    
+                            &:before{
+                                background-size: 28px;
+                                width: 28px;
+                                height: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

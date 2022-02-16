@@ -46,6 +46,13 @@
         }
     }
 }
+@media (max-width: 991px){
+    .ruby-slider-hw{
+        .ruby-slider-nav{
+            display: none !important;
+        }
+    }
+}
 @media (max-width: 479px){
     .ruby-block-inner{
         padding: 0 !important;

@@ -117,6 +117,10 @@ body {
   display: none;
 }
 
+#sticky-wrapper.ruby-is-stick .header-nav-holder .nav-search-wrap {
+  height: 43px;
+}
+
 #sticky-wrapper.ruby-is-stick .main-nav-inner > li.menu-order {
   height: 42px;
 }
@@ -819,6 +823,12 @@ body.search-no-results .search-page-header {
   background-color: #fff;
 }
 
+@media (max-width: 991px) {
+  .ruby-slider-hw .ruby-slider-nav {
+    display: none !important;
+  }
+}
+
 @media (max-width: 479px) {
   .ruby-block-inner {
     padding: 0 !important;
@@ -1054,6 +1064,10 @@ body.single-post .post-content {
   line-height: 24px;
 }
 
+body.single-post .post-content #ruby-table-contents {
+  display: none !important;
+}
+
 body.single-post .post-content p a,
 body.single-post .post-content li a,
 body.single-post .post-content span a {
@@ -1091,6 +1105,35 @@ body.single-post .post-content h6 {
 
 #dpsp-content-bottom a {
   color: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .blog-content-wrap article .is-left-col {
+    min-height: 0;
+    height: 140px;
+    width: 150px;
+  }
+  .blog-content-wrap article .is-right-col {
+    width: calc(100% - 170px);
+  }
+  .blog-content-wrap article .is-right-col .post-header .post-header-meta .post-cat-info a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .blog-content-wrap article .is-right-col .post-header .entry-header h3 {
+    line-height: 24px;
+  }
+  .blog-content-wrap article .is-right-col .post-header .entry-header h3 a {
+    font-size: 21px;
+  }
+  .blog-content-wrap article .is-right-col .post-excerpt {
+    display: none;
+  }
+  .blog-content-wrap article .is-right-col .article-footer .post-share-bar .post-share-bar-inner:before {
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
 }
 
 html.no-scroll {

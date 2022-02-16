@@ -652,9 +652,9 @@ body.is-site-link:before {
     position: absolute;
     top: 50%;
     z-index: 1;
-    margin-top: -35px;
-    width: 70px;
-    height: 70px;
+    margin-top: -10px;
+    width: 20px;
+    height: 30px;
     border-radius: 0;
     box-shadow: none;
     opacity: 0;
@@ -688,13 +688,13 @@ body.is-site-link:before {
 
 .ruby-slider-prev {
     left: 20px;
-    background: url("../images/nav-left.png") center center no-repeat !important;
+    background: url("../images/nav-left.svg") center center no-repeat !important;
     background-size: cover !important;
 }
 
 .ruby-slider-next {
     right: 20px;
-    background: url("../images/nav-right.png") center center no-repeat !important;
+    background: url("../images/nav-right.svg") center center no-repeat !important;
     background-size: cover !important;
 }
 
