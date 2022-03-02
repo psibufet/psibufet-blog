@@ -1,0 +1,22 @@
+{
+  "name": "psibufet-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch sass": "sass --watch sass:css",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psibufet/psibufet-blog.git"
+  },
+  "author": "Codestick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psibufet/psibufet-blog/issues"
+  },
+  "homepage": "https://github.com/psibufet/psibufet-blog#readme",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

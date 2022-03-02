@@ -100,5 +100,9 @@ function blog_scirpts(){
 	// custom js
 	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', null, null, true );
 	wp_enqueue_script('custom-js');
+
+	// SEO script
+	wp_register_script( 'psibufet-blog-seo', get_template_directory_uri() . '/js/_seo.js', null, null, true );
+	wp_enqueue_script('psibufet-blog-seo');
 }
 add_action( 'wp_enqueue_scripts', 'blog_scirpts' );
