@@ -199,6 +199,18 @@
             }
         }
     }
+    .moreButton{
+        .btn{
+            width: 100%;
+            height: 50px;
+            text-decoration: none !important;
+
+            span{
+                font-size: 18px;
+                line-height: 21px;
+            }
+        }
+    }
 }
 @media (max-width: 1199px){
     .block-content-wrap{
@@ -255,6 +267,18 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        .moreButton{
+            .btn{
+                width: 100%;
+                height: 40px;
+                text-decoration: none !important;
+    
+                span{
+                    font-size: 15px;
+                    line-height: 18px;
                 }
             }
         }
