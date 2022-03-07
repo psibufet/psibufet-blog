@@ -35,4 +35,13 @@
             }
         });
     });
+
+    /**
+     * Remove main posts blog page
+     */
+    $(document).ready(function(){
+        if($('body').hasClass('blog')){
+            $('#ruby-site-content').find('.feat-wrap').remove();
+        }
+    });
 }(jQuery));
