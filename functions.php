@@ -106,3 +106,14 @@ function blog_scirpts(){
 	wp_enqueue_script('psibufet-blog-seo');
 }
 add_action( 'wp_enqueue_scripts', 'blog_scirpts' );
+
+/**
+ * Remove tag pages
+ */
+add_action('template_redirect', 'wpse69948_archive_disabler');
+function wpse69948_archive_disabler(){
+    if(is_tag() || is_date() || is_author()){
+        global $wp_query;
+        $wp_query->set_404();
+    }
+}

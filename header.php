@@ -27,4 +27,3 @@
 	<div class="main-site-wrap">
 		<div class="main-site-mask"></div>
 		<div id="ruby-site-content" class="main-site-content-wrap clearfix">
-
