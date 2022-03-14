@@ -113,6 +113,6 @@ add_action( 'wp_enqueue_scripts', 'blog_scirpts' );
 add_action('template_redirect', 'wpse69948_archive_disabler');
 function wpse69948_archive_disabler(){
     if(is_tag() || is_date() || is_author()){
-		wp_redirect('/wszystkie-wpisy/', 301);
+		wp_redirect('/blog/wszystkie-wpisy/', 301);
     }
 }
