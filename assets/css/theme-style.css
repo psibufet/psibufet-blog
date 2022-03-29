@@ -6445,8 +6445,8 @@ input#comment-submit:focus {
 /* back to top */
 #ruby-back-top {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 32px;
+    bottom: 110px;
     z-index: 99990;
     display: none;
     overflow: hidden;
