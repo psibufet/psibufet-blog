@@ -736,29 +736,29 @@ var look_ruby_site_bg_link;
     /**-------------------------------------------------------------------------------------------------------------------------
      *  Back to top
      */
-    // function look_ruby_back_to_top() {
-    //     if (1 == look_ruby_to_top) {
-    //         if (1 == look_ruby_to_top_mobile) {
-    //             $().UItoTop({
-    //                 containerID: 'ruby-back-top', //fading element id
-    //                 easingType: 'easeOutQuart',
-    //                 text: '<i class="fa-rb fa-long-arrow-up" aria-hidden="true"></i>',
-    //                 containerHoverID: 'ruby-back-top-inner',
-    //                 scrollSpeed: 800
-    //             });
-    //         } else {
-    //             if (false === look_ruby.touch) {
-    //                 $().UItoTop({
-    //                     containerID: 'ruby-back-top', //fading element id
-    //                     easingType: 'easeOutQuart',
-    //                     text: '<i class="fa-rb fa-long-arrow-up" aria-hidden="true"></i>',
-    //                     containerHoverID: 'ruby-back-top-inner',
-    //                     scrollSpeed: 800
-    //                 });
-    //             }
-    //         }
-    //     }
-    // }
+    function look_ruby_back_to_top() {
+        if (1 == look_ruby_to_top) {
+            if (1 == look_ruby_to_top_mobile) {
+                $().UItoTop({
+                    containerID: 'ruby-back-top', //fading element id
+                    easingType: 'easeOutQuart',
+                    text: '<i class="fa-rb fa-long-arrow-up" aria-hidden="true"></i>',
+                    containerHoverID: 'ruby-back-top-inner',
+                    scrollSpeed: 800
+                });
+            } else {
+                if (false === look_ruby.touch) {
+                    $().UItoTop({
+                        containerID: 'ruby-back-top', //fading element id
+                        easingType: 'easeOutQuart',
+                        text: '<i class="fa-rb fa-long-arrow-up" aria-hidden="true"></i>',
+                        containerHoverID: 'ruby-back-top-inner',
+                        scrollSpeed: 800
+                    });
+                }
+            }
+        }
+    }
 
 
     /**-------------------------------------------------------------------------------------------------------------------------
