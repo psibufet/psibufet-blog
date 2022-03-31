@@ -1,5 +1,10 @@
 (function($){
 
+    // Delete back to top
+    $(document).ready(function(){
+        $('#ruby-back-top').remove();
+    }); 
+
     $(document).ready(function(){
         $('.mobileMenu').on('click', function(){
             $('.menuMobile').toggleClass('menuMobile--active');
