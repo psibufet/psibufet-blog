@@ -23,7 +23,7 @@
 <?php wp_body_open(); ?>
 <?php get_template_part( 'templates/header/module', 'off_canvas' ); ?>
 <div class="promobar__clone"></div>
-<a href="#" class="promobar">
+<a href="https://psibufet.pl/?code=2blog20&utm_source=blog&utm_medium=display&utm_campaign=004_belka&utm_term=004_belka" class="promobar">
 	<div class="promobar__wrap container">
 		<h2><span class="value">-20%</span> Mamy dla Ciebie rabat na psie jedzenie <span class="link">Odbierz</span></h2>
 	</div>
