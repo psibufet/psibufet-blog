@@ -22,6 +22,12 @@
 <!-- End Google Tag Manager (noscript) --> 
 <?php wp_body_open(); ?>
 <?php get_template_part( 'templates/header/module', 'off_canvas' ); ?>
+<div class="promobar__clone"></div>
+<a href="#" class="promobar">
+	<div class="promobar__wrap container">
+		<h2><span class="value">-20%</span> Mamy dla Ciebie rabat na psie jedzenie <span class="link">Odbierz</span></h2>
+	</div>
+</a>
 <div class="main-site-outer">
 	<?php get_template_part( 'templates/section', 'header' ); ?>
 	<div class="main-site-wrap">

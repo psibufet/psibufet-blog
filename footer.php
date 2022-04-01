@@ -27,12 +27,14 @@
                         <li><a href="/o-nas" class="dir">O Nas</a></li>
                         <li><a href="https://panel.psibufet.pl" class="dir">Zaloguj się</a></li>
                         <li><a href="https://zamowienie.psibufet.pl" class="dir order">Zamów</a></li>
+                        <li><a href="/program-partnerski" class="dir">Zostań partnerem</a></li>
                     </ul>
                     <ul class="links">
-                        <li><a href="/program-partnerski" class="dir">Zostań partnerem</a></li>
+                        
                         <li><a href="/restauracje" class="dir">Psyjazne restauracje</a></li>
                         <li><a href="/pomoc" class="dir">Pomoc</a></li>
                         <li><a href="https://psibufet.pl/blog/" class="dir">Blog</a></li>
+                        <li><a href="/rasy-psow" class="dir">Rasy psów</a></li>
                         <li>
                             <a href="/pracuj-w-psibufet" class="dir">Praca</a>
                             <div class="flag">Zatrudniamy</div>
