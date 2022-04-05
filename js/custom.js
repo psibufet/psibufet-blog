@@ -31,4 +31,24 @@
         });
     });
 
+
+    // Promobar
+    $(document).ready(function(){
+        var height = $('.promobar').height();
+        $('.promobar__clone').css('height', height);
+    });
+
+    // Article advert
+    $(document).ready(function(){
+        if($('.psibufet-article-banner').length){
+            var imageURL = $('.single-banner-data').data('image-url');
+            var imageAlt = $('.single-banner-data').data('image-alt');
+            var url = $('.single-banner-data').data('url');
+
+            $('.psibufet-article-banner').each(function(){
+                $(this).append().html('<a href="' + url + '"><img src="' + imageURL + '" alt="' + imageAlt + '"/></a>');
+            });
+        }
+    });
+
 }(jQuery));

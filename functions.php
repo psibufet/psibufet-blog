@@ -116,3 +116,16 @@ function wpse69948_archive_disabler(){
 		wp_redirect('/blog/wszystkie-wpisy/', 301);
     }
 }
+
+/**
+ * Options page
+ */
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Reklama w artykule',
+		'menu_title'	=> 'Reklama w artykule',
+		'menu_slug' 	=> 'artilce-ad',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+}

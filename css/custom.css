@@ -1102,12 +1102,11 @@ html.no-scroll {
   display: block;
   height: 62px;
   width: 100%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #f15748;
-  z-index: 999;
-}
-.promobar__clone {
-  display: none;
+  z-index: 9999;
 }
 .promobar__wrap {
   display: flex;

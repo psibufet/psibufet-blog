@@ -22,6 +22,11 @@
 <!-- End Google Tag Manager (noscript) --> 
 <?php wp_body_open(); ?>
 <?php get_template_part( 'templates/header/module', 'off_canvas' ); ?>
+<?php
+	if(is_single()){
+		echo '<div class="single-banner-data" data-image-url="' . get_field('ad_banner', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner', 'option')['alt'] . '" data-url="' . get_field('ad_link', 'option') . '"></div>';
+	}
+?>
 <div class="promobar__clone"></div>
 <a href="https://psibufet.pl/?code=2blog20&utm_source=blog&utm_medium=display&utm_campaign=004_belka&utm_term=004_belka" class="promobar">
 	<div class="promobar__wrap container">
@@ -33,3 +38,4 @@
 	<div class="main-site-wrap">
 		<div class="main-site-mask"></div>
 		<div id="ruby-site-content" class="main-site-content-wrap clearfix">
+			

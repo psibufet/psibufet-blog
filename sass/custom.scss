@@ -108,13 +108,11 @@ html{
     display: block;
     height: 62px;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: $pbred;
-    z-index: 999;
-
-    &__clone{
-        display: none;
-    }
+    z-index: 9999;
 
     &__wrap{
         display: flex;
