@@ -843,7 +843,7 @@ var look_ruby_site_bg_link;
 
         if (look_ruby.body.hasClass('is-sticky-nav')) {
 
-            var topSpacing = 0;
+            var topSpacing = 62;
             var smartSticky = false;
             if (look_ruby.body.hasClass('admin-bar')) {
                 topSpacing = 32;
