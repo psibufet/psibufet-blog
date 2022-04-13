@@ -73,3 +73,104 @@ body.single-post{
         color: #fff !important;
     }
 }
+
+/**
+ * Single USP banner
+ */
+.psibufet-usp-banner{
+    text-align: center;
+    margin-top: 36px;
+
+    img{
+        width: 100%;
+        max-width: 170px;
+        margin: 0 0 15px;
+    }
+    h3{
+        font-size: 54px;
+        line-height: 67px;
+        font-weight: 400;
+        font-family: 'Bebas Neue', sans-serif;
+        color: #000;
+        margin: 0 0 25px;
+        text-align: center;
+    }
+    .usp{
+        display: flex;
+        justify-content: space-between;
+
+        &__pos{
+            img{
+                width: 100px;
+                height: 100px;
+                margin: 0 0 15px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 19px;
+                color: #000;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+    .cta{
+        margin: 30px 0 0;
+
+        .btn{
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 991px){
+    .psibufet-usp-banner{
+        img{
+            max-width: 130px;
+        }
+        h3{
+            font-size: 40px;
+            line-height: 54px;
+        }
+        .usp{
+            &__pos{
+                img{
+                    width: 75px;
+                    height: 75px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .psibufet-usp-banner{
+        img{
+            max-width: 70px;
+            margin: 0 0 5px;
+        }
+        h3{
+            font-size: 28px;
+            line-height: 34px;
+            margin: 0 0 15px;
+        }
+        .usp{
+            max-width: 320px;
+            margin: 0 auto;
+
+            &__pos{
+                &:nth-child(2),
+                &:nth-child(4){
+                    display: none;
+                }
+
+                img{
+                    height: 75px;
+                    margin: 0 0 10px;
+                }
+            }
+        }
+    }
+}

@@ -40,13 +40,53 @@
 
     // Article advert
     $(document).ready(function(){
+
+        // Banner #1
         if($('.psibufet-article-banner').length){
-            var imageURL = $('.single-banner-data').data('image-url');
-            var imageAlt = $('.single-banner-data').data('image-alt');
-            var url = $('.single-banner-data').data('url');
+            let imageURL = $('.single-banner-data').data('image-url'),
+                imageAlt = $('.single-banner-data').data('image-alt'),
+                url = $('.single-banner-data').data('url');
 
             $('.psibufet-article-banner').each(function(){
                 $(this).append().html('<a href="' + url + '"><img src="' + imageURL + '" alt="' + imageAlt + '"/></a>');
+            });
+        }
+        
+        // Banner #2
+        if($('.psibufet-full-banner').length){
+            let imageURL = $('.full-banner-data').data('image-url'),
+                imageAlt = $('.full-banner-data').data('image-alt'),
+                url = $('.full-banner-data').data('url');
+
+            $('.psibufet-full-banner').each(function(){
+                $(this).append().html('<a href="' + url + '"><img src="' + imageURL + '" alt="' + imageAlt + '"/></a>');
+            });
+        }
+
+        // USP banner
+        if($('.psibufet-usp-banner').length){
+            let bannerData = $('.single-psibufet-data'),
+                logo = bannerData.data('logo-url'),
+                logoAlt = bannerData.data('logo-alt'),
+                url = bannerData.data('url'),
+                title = bannerData.data('title'),
+                usp = bannerData.find('span');
+
+            $('.psibufet-usp-banner').each(function(){
+                let $this = $(this);
+                $this.append().html('<img src="' + logo + '" alt="' + logoAlt + '"/><h3>' + title + '</h3><div class="usp"></div>');
+
+                let uspContainer = $this.find('.usp');
+
+                $(usp).each(function(){
+                    let icon = $(this).data('icon-url'),
+                        iconAlt = $(this).data('icon-alt'),
+                        text = $(this).data('text');
+
+                    uspContainer.append('<div class="usp__pos"><img src="' + icon + '" alt="' + iconAlt + '"/><p>' + text + '</p></div>');
+                });
+
+                uspContainer.after('<div class="cta"><a href="' + url + '" class="btn btn--center"><span>Dowiedz się więcej</span></a></div>');
             });
         }
     });
