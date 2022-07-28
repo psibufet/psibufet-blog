@@ -129,3 +129,40 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false
 	));
 }
+
+function letter_selector_shortcode(){
+	$html = '<div class="letterSelector">
+		<h4 class="name-a">A</h4>
+		<h4 class="name-b">B</h4>
+		<h4 class="name-c">C</h4>
+		<h4 class="name-d">D</h4>
+		<h4 class="name-e">E</h4>
+		<h4 class="name-f">F</h4>
+		<h4 class="name-g">G</h4>
+		<h4 class="name-h">H</h4>
+		<h4 class="name-i">I</h4>
+		<h4 class="name-j">J</h4>
+		<h4 class="name-k">K</h4>
+		<h4 class="name-l">L</h4>
+		<h4 class="name-la">Ł</h4>
+		<h4 class="name-m">M</h4>
+		<h4 class="name-n">N</h4>
+		<h4 class="name-o">O</h4>
+		<h4 class="name-p">P</h4>
+		<h4 class="name-q">Q</h4>
+		<h4 class="name-r">R</h4>
+		<h4 class="name-s">S</h4>
+		<h4 class="name-sa">Ś</h4>
+		<h4 class="name-t">T</h4>
+		<h4 class="name-u">U</h4>
+		<h4 class="name-v">V</h4>
+		<h4 class="name-w">W</h4>
+		<h4 class="name-x">X</h4>
+		<h4 class="name-y">Y</h4>
+		<h4 class="name-z">Z</h4>
+	</div>';
+
+	return $html;
+}
+
+add_shortcode('letter_selector', 'letter_selector_shortcode');

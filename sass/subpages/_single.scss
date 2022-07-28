@@ -174,3 +174,29 @@ body.single-post{
         }
     }
 }
+
+/**
+ *  Letter selector
+ */
+.letterSelector{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+    h4{
+        display: block;
+        font-size: 60px;
+        line-height: 1;
+        cursor: pointer;
+        transition: ease .3s;
+        width: 100%;
+        max-width: calc(100% / 14);
+        margin: 0 0 15px;
+        text-align: center;
+
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
