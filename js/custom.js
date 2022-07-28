@@ -100,7 +100,7 @@
 
             $(this).on('click', function(){
                 $('html, body').animate({
-                    scrollTop: $('div.' + name).offset().top
+                    scrollTop: $('div.' + name).offset().top - 150
                 }, 1000);
             });
         })

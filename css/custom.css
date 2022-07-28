@@ -1247,6 +1247,12 @@ body.single-post .post-content h6 {
   opacity: .7;
 }
 
+@media (max-width: 575px) {
+  .letterSelector h4 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 1199px) {
   .blog-content-wrap article .is-left-col {
     height: 200px;
