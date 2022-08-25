@@ -12,9 +12,16 @@ if ( ! class_exists( 'look_ruby_template_single' ) ) {
 		 */
 		static function post_title() {
 
+			$createDate = get_the_date();
+			$updateDate = get_the_modified_date();
+
 			echo '<header class="entry-header single-title post-title is-big-title ">';
 			if ( get_the_title() ) {
 				echo '<h1 class="entry-title" itemprop="headline">' . get_the_title() . '</h1>';
+				echo '<div class="post-date">';
+				echo '<p class="create-date">Data publikacji: ' . $createDate . '</p>';
+				echo '<p class="update-date">Data aktualizacji: ' . $updateDate . '</p>';
+				echo '</div>';
 			}
 			//render subtitle
 			echo self::post_title_sub();

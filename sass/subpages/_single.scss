@@ -16,6 +16,28 @@ body.single-post{
                 font-family: 'Bebas Neue', sans-serif;
                 font-weight: 400;
             }
+            .post-date{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 20px 0 0 !important;
+                width: 100%;
+
+                .create-date{
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: none;
+                    display: block;
+                    color: #bdbdbd;
+                }
+                .update-date{
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: none;
+                    display: block;
+                    color: #bdbdbd;
+                }
+            }
         }
     }
     .post-content{
@@ -62,6 +84,27 @@ body.single-post{
                 li{
                     font-size: 14px;
                     line-height: 24px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    body.single-post{
+        .single-header{
+            .entry-header{
+                .post-date{
+                    flex-direction: column;
+    
+                    .create-date{
+                        font-size: 12px;
+                        margin: 0 0 10px !important;
+                        text-align: center;
+                    }
+                    .update-date{
+                        font-size: 12px;
+                        text-align: center;
+                    }
                 }
             }
         }

@@ -1081,6 +1081,30 @@ body.single-post .single-header .entry-header h1 {
   font-weight: 400;
 }
 
+body.single-post .single-header .entry-header .post-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 0 !important;
+  width: 100%;
+}
+
+body.single-post .single-header .entry-header .post-date .create-date {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  display: block;
+  color: #bdbdbd;
+}
+
+body.single-post .single-header .entry-header .post-date .update-date {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  display: block;
+  color: #bdbdbd;
+}
+
 body.single-post .post-content {
   font-size: 16px;
   line-height: 24px;
@@ -1122,6 +1146,21 @@ body.single-post .post-content h6 {
   body.single-post .post-content > ul li {
     font-size: 14px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  body.single-post .single-header .entry-header .post-date {
+    flex-direction: column;
+  }
+  body.single-post .single-header .entry-header .post-date .create-date {
+    font-size: 12px;
+    margin: 0 0 10px !important;
+    text-align: center;
+  }
+  body.single-post .single-header .entry-header .post-date .update-date {
+    font-size: 12px;
+    text-align: center;
   }
 }
 
