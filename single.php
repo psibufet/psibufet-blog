@@ -27,6 +27,7 @@ if ( have_posts() ) {
 			look_ruby_render_single_post();
 		}
 	}
+	
 }
 
 get_footer();

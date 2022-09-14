@@ -1,0 +1,120 @@
+.gsExpert{
+    padding: 32px 0 40px;
+
+    &__wrap{
+        max-width: 955px;
+        width: 100%;
+        border: 1px solid #BCBCBB;
+        padding: 40px;
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__image{
+        width: 100%;
+        max-width: 200px;
+        margin-right: 25px;
+        text-align: center;
+
+        img{
+            padding: 11px;
+            border: 2px solid #F7BE45;
+            border-radius: 100%;
+            margin: 0 auto 18px;
+            min-width: 100%;
+        }
+        h4{
+            font-size: 26px;
+            line-height: 30px;
+            font-weight: 400;
+            color: #000;
+            font-family: "Bebas Neue", sans-serif;
+            margin: 0;
+            text-align: center;
+
+            a{
+                font-weight: normal !important;
+            }
+        }
+    }
+    &__content{
+        max-width: calc(100% - 225px);
+
+        p{
+            font-size: 18px;
+            line-height: 26px;
+            color: #000;
+            text-align: justify;
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 991px){
+    .gsExpert{
+        &__wrap{
+            padding: 25px;
+        }
+        &__image{
+            max-width: 160px;
+            margin-right: 20px;
+
+            img{
+                max-width: 100%;
+                padding: 8px;
+                margin: 0 auto 14px;
+            }
+        }
+        &__content{
+            max-width: calc(100% - 180px);
+
+            p{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .gsExpert{
+        &__wrap{
+            flex-direction: column;
+            padding: 25px 10px;
+        }
+        &__image{
+            width: 100%;
+            margin: 0 auto 20px;
+
+            img{
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+        &__content{
+            width: 100%;
+            max-width: calc(100% - 60px);
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 575px){
+    .gsExpert{
+        &__image{
+            margin: 0 auto 15px;
+
+            img{
+                max-width: 190px;
+                margin: 0 auto 12px;
+            }
+        }
+        &__content{
+            max-width: calc(100% - 30px);
+
+            p{
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+}
