@@ -2,7 +2,7 @@
 <section class="gsExpert">
     <div class="gsExpert__wrap">
         <div class="gsExpert__image">
-            <img src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>"/>
+            <img src="<?php echo get_field('author_profile_image', 'user_' . get_the_author_meta('ID'))['url']; ?>" alt="<?php echo get_field('author_profile_image', 'user_' . get_the_author_meta('ID'))['alt']; ?>"/>
             <h4><a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php echo get_the_author_meta('nickname'); ?></a></h4>
         </div>
         <div class="gsExpert__content">
