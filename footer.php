@@ -60,6 +60,7 @@
                     <div class="payment__list">
                         <div><img src="<?php echo get_template_directory_uri() . '/assets/images/footer/mastercard.svg'; ?>"/></div>
                         <div><img src="<?php echo get_template_directory_uri() . '/assets/images/footer/visa.svg'; ?>"/></div>
+                        <div><img src="<?php echo get_template_directory_uri() . '/assets/images/footer/googlepay.svg'; ?>"/></div>
                         <div><img src="<?php echo get_template_directory_uri() . '/assets/images/footer/applepay.svg'; ?>"/></div>
                     </div>
                 </div>
