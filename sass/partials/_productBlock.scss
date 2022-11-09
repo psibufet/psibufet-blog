@@ -1,5 +1,6 @@
 .product{
     padding: 20px 40px;
+    margin: 20px 0;
 
     &__wrap{
         display: flex;
@@ -136,7 +137,7 @@
 @media (max-width: 991px){
     .product{
         padding: 15px 25px;
-        
+
         &__image{
             max-width: 150px;
             margin-right: 40px;
