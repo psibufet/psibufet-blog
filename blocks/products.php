@@ -9,19 +9,11 @@
 $select = get_field('product_select');
 
 // create id attribute for specific styling
-$id = 'products-' . $block['id'];
+$product = get_page_by_path( $select['value'], OBJECT, 'products' );
+$product_id = $product->ID;
 
-if($select['value'] == 'wolowe-love'){
-    $product_id = 3915;
-}else if($select['value'] == 'kurcze-pieczone'){
-    $product_id = 3924;
-}else if($select['value'] == 'jagnie-wcina'){
-    $product_id = 3925;
-}else if($select['value'] == 'jagnie-wcina'){
-    $product_id = 3926;
-}
 ?>
-<section id="<?php echo $id; ?>" class="product product--<?php echo $select['value']; ?>" style="background-color: <?php echo get_field('product_color', $product_id); ?>0d">
+<section class="product product--<?php echo $select['value']; ?>" style="background-color: <?php echo get_field('product_color', $product_id); ?>0d">
     <div class="product__wrap">
         <div class="product__image">
             <img src="<?php echo get_field('product_image', $product_id)['url']; ?>" />
