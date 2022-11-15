@@ -171,8 +171,8 @@ add_shortcode('letter_selector', 'letter_selector_shortcode');
 /**
  * ACF Blocks - Produkty
  */
-add_action('acf/init', 'my_acf_init');
-function my_acf_init() {
+add_action('acf/init', 'acf_block_products');
+function acf_block_products() {
     
     // check function exists
     if( function_exists('acf_register_block') ) {
@@ -181,15 +181,39 @@ function my_acf_init() {
         acf_register_block(array(
             'name'              => 'products',
             'title'             => __('Produkty'),
-            'description'       => __('A custom testimonial block.'),
-            'render_callback'   => 'my_acf_block_render_callback',
+            'description'       => __('Blok produktowy na stronie wpisu'),
+            'render_callback'   => 'acf_block_render_callback',
             'category'          => 'formatting',
             'icon'              => 'admin-comments',
             'keywords'          => array( 'products', 'produkty' ),
         ));
     }
 }
-function my_acf_block_render_callback( $block ) {
+
+/**
+ * ACF Blocks - Cytat eksperta
+ */
+add_action('acf/init', 'acf_block_expert');
+function acf_block_expert() {
+    
+    // check function exists
+    if( function_exists('acf_register_block') ) {
+        
+        // register a testimonial block
+        acf_register_block(array(
+            'name'              => 'expert',
+            'title'             => __('Cytat eksperta'),
+            'description'       => __('Cytat eksperta na stronie wpisu'),
+            'render_callback'   => 'acf_block_render_callback',
+            'category'          => 'formatting',
+            'icon'              => 'admin-comments',
+            'keywords'          => array( 'expert', 'ekspert' ),
+        ));
+    }
+}
+
+
+function acf_block_render_callback( $block ) {
     
     // convert name ("acf/testimonial") into path friendly slug ("testimonial")
     $slug = str_replace('acf/', '', $block['name']);

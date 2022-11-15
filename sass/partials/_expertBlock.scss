@@ -1,0 +1,65 @@
+.expertQuote{
+    background-color: #f7bf451a;
+    padding: 20px;
+
+    &__quote{
+        margin: 0 0 12px;
+
+        p{
+            font-size: 16px;
+            line-height: 21px;
+            font-style: italic;
+            color: #000;
+            margin: 0 0 20px;
+        }
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            border: 1px solid #f7bf45;
+            padding: 2px;
+            margin-right: 16px;
+
+            img{
+                border-radius: 100%;
+            }
+        }
+        .info{
+            max-width: calc(100% - 106px);
+            
+            p{
+                font-size: 16px;
+                line-height: 21px;
+                color: #000;
+                margin: 0;
+
+                &.name{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .expertQuote{
+        &__quote{
+            p{
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+        &__info{
+            .info{
+                p{
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+            }
+        }
+    }
+}
