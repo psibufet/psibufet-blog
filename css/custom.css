@@ -1530,7 +1530,7 @@ body.single-post .single-header .entry-header .post-heading-info .post-info .rea
 
 body.single-post .single-header .entry-header .post-heading-info .post-info .read-time:before {
   content: '';
-  background-image: url("/wp-content/themes/psibufet-blog/assets/images/single/time_ico.svg");
+  background-image: url("../assets/images/single/time_ico.svg");
   background-repeat: no-repeat;
   background-size: 32px;
   width: 32px;
@@ -1557,7 +1557,7 @@ body.single-post .single-header .entry-header .post-heading-info .post-info .upd
 
 body.single-post .single-header .entry-header .post-heading-info .post-info .update-date:before {
   content: '';
-  background-image: url("/wp-content/themes/psibufet-blog/assets/images/single/calendar_ico.svg");
+  background-image: url("../assets/images/single/calendar_ico.svg");
   background-repeat: no-repeat;
   background-size: 32px;
   width: 32px;
