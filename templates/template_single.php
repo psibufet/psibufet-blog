@@ -12,15 +12,30 @@ if ( ! class_exists( 'look_ruby_template_single' ) ) {
 		 */
 		static function post_title() {
 
+			$post_id = get_the_ID();
 			$createDate = get_the_date();
 			$updateDate = get_the_modified_date();
+			$author_id = get_post_field('post_author', $post_id);
+			$author_page = get_author_posts_url($post_id);
+			$author_name = get_the_author_meta('display_name', $author_id);
+			$author_image = get_field('author_profile_image', 'user_' . $author_id);
 
 			echo '<header class="entry-header single-title post-title is-big-title ">';
 			if ( get_the_title() ) {
 				echo '<h1 class="entry-title" itemprop="headline">' . get_the_title() . '</h1>';
-				echo '<div class="post-date">';
-				echo '<p class="create-date">Data publikacji: ' . $createDate . '</p>';
-				echo '<p class="update-date">Data aktualizacji: ' . $updateDate . '</p>';
+				echo '<div class="post-heading-info">';
+				echo '<a href="' . $author_page . '" class="author-info">';
+				echo '<div class="image"><img src="' . $author_image['url'] . '" /></div>';
+				echo '<div class="info"><p>Autor artykułu: <b>' . $author_name . '</b></p></div>';
+				echo '</a>';
+				echo '<div class="post-info">';
+				echo '<div class="read-time"><p>Przeczytasz w: <span id="readTime">...</span></p></div>';
+				if($createDate !== $updateDate){
+					echo '<div class="update-date"><p>' . $updateDate . '</p></div>';
+				}else{
+					echo '<div class="update-date"><p>' . $createDate . '</p></div>';
+				}
+				echo '</div>';
 				echo '</div>';
 			}
 			//render subtitle

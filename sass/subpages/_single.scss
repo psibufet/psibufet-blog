@@ -16,26 +16,112 @@ body.single-post{
                 font-family: 'Bebas Neue', sans-serif;
                 font-weight: 400;
             }
-            .post-date{
+            .post-heading-info{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 margin: 20px 0 0 !important;
-                width: 100%;
 
-                .create-date{
-                    font-size: 14px;
-                    font-weight: 600;
-                    text-transform: none;
-                    display: block;
-                    color: #bdbdbd;
+                .author-info{
+                    display: flex;
+                    align-items: center;
+                    background: unset !important;
+                    transition: ease .3s;
+
+                    &:hover{
+                        opacity: .8;
+                    }
+
+                    .image{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 100%;
+                        padding: 1px;
+                        border: 2px solid #F7BE45;
+                        margin-right: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img{
+                            border-radius: 100%;
+                        }
+                    }
+                    .info{
+                        width: 100%;
+                        max-width: calc(100% - 58px);
+
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, .5);
+                            margin: 0;
+                            text-transform: none;
+                            font-weight: 400;
+
+                            b{
+                                font-weight: 700;
+                            }
+                        }
+                    }
                 }
-                .update-date{
-                    font-size: 14px;
-                    font-weight: 600;
-                    text-transform: none;
-                    display: block;
-                    color: #bdbdbd;
+                .post-info{
+                    display: flex;
+                    align-items: center;
+
+                    .read-time{
+                        display: flex;
+                        align-items: center;
+                        margin-right: 30px;
+                        position: relative;
+
+                        &:before{
+                            content: '';
+                            background-image: url('/wp-content/themes/psibufet-blog/assets/images/single/time_ico.svg');
+                            background-repeat: no-repeat;
+                            background-size: 32px;
+                            width: 32px;
+                            height: 32px;
+                            position: relative;
+                            display: block;
+                            margin-right: 10px;
+                        }
+
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, .5);
+                            margin: 0;
+                            text-transform: none;
+                            font-weight: 400;
+                        }
+                    }
+                    .update-date{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+
+                        &:before{
+                            content: '';
+                            background-image: url('/wp-content/themes/psibufet-blog/assets/images/single/calendar_ico.svg');
+                            background-repeat: no-repeat;
+                            background-size: 32px;
+                            width: 32px;
+                            height: 32px;
+                            position: relative;
+                            display: block;
+                            margin-right: 10px;
+                        }
+
+                        p{
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: rgba(0, 0, 0, .5);
+                            margin: 0;
+                            text-transform: none;
+                            font-weight: 400;
+                        }
+                    }
                 }
             }
         }
@@ -73,8 +159,71 @@ body.single-post{
         }
     }
 }
+@media (max-width: 1199px){
+    body.single-post{
+        .single-header{
+            .entry-header{
+                .post-heading-info{
+                    .author-info{
+                        .info{
+                            p{
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                    .post-info{
+                        .read-time,
+                        .update-date{
+                            p{
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 991px){
     body.single-post{
+        .single-header{
+            .entry-header{
+                .post-heading-info{
+                    flex-direction: column;
+
+                    .author-info{
+                        width: 100%;
+                        margin: 0 0 15px;
+                        justify-content: center;
+
+                        .image{
+                            width: 58px;
+                            height: 58px;
+                        }
+                        .info{
+                            width: auto;
+                            max-width: none;
+                        }
+                    }
+                    .post-info{
+                        .read-time{
+                            margin-right: 20px;
+                        }
+                        .read-time,
+                        .update-date{
+                            &:before{
+                                background-size: 28px;
+                                width: 28px;
+                                height: 28px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .post-content{
             &>p{
                 font-size: 14px;
@@ -93,17 +242,23 @@ body.single-post{
     body.single-post{
         .single-header{
             .entry-header{
-                .post-date{
-                    flex-direction: column;
-    
-                    .create-date{
-                        font-size: 12px;
-                        margin: 0 0 10px !important;
-                        text-align: center;
+                .post-heading-info{
+                    .author-info{
+                        .info{
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
                     }
-                    .update-date{
-                        font-size: 12px;
-                        text-align: center;
+                    .post-info{
+                        .read-time,
+                        .update-date{
+                            p{
+                                font-size: 10px;
+                                line-height: 14px;
+                            }
+                        }
                     }
                 }
             }

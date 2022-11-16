@@ -1464,28 +1464,116 @@ body.single-post .single-header .entry-header h1 {
   font-weight: 400;
 }
 
-body.single-post .single-header .entry-header .post-date {
+body.single-post .single-header .entry-header .post-heading-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 20px 0 0 !important;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .author-info {
+  display: flex;
+  align-items: center;
+  background: unset !important;
+  transition: ease .3s;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .author-info:hover {
+  opacity: .8;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .author-info .image {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  padding: 1px;
+  border: 2px solid #F7BE45;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .author-info .image img {
+  border-radius: 100%;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .author-info .info {
   width: 100%;
+  max-width: calc(100% - 58px);
 }
 
-body.single-post .single-header .entry-header .post-date .create-date {
+body.single-post .single-header .entry-header .post-heading-info .author-info .info p {
   font-size: 14px;
-  font-weight: 600;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
   text-transform: none;
-  display: block;
-  color: #bdbdbd;
+  font-weight: 400;
 }
 
-body.single-post .single-header .entry-header .post-date .update-date {
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: none;
+body.single-post .single-header .entry-header .post-heading-info .author-info .info p b {
+  font-weight: 700;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info {
+  display: flex;
+  align-items: center;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .read-time {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  position: relative;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .read-time:before {
+  content: '';
+  background-image: url("/wp-content/themes/psibufet-blog/assets/images/single/time_ico.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  position: relative;
   display: block;
-  color: #bdbdbd;
+  margin-right: 10px;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .read-time p {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .update-date {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .update-date:before {
+  content: '';
+  background-image: url("/wp-content/themes/psibufet-blog/assets/images/single/calendar_ico.svg");
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}
+
+body.single-post .single-header .entry-header .post-heading-info .post-info .update-date p {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  text-transform: none;
+  font-weight: 400;
 }
 
 body.single-post .post-content {
@@ -1521,7 +1609,45 @@ body.single-post .post-content h6 {
   color: #000;
 }
 
+@media (max-width: 1199px) {
+  body.single-post .single-header .entry-header .post-heading-info .author-info .info p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .post-info .read-time p,
+  body.single-post .single-header .entry-header .post-heading-info .post-info .update-date p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
 @media (max-width: 991px) {
+  body.single-post .single-header .entry-header .post-heading-info {
+    flex-direction: column;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .author-info {
+    width: 100%;
+    margin: 0 0 15px;
+    justify-content: center;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .author-info .image {
+    width: 58px;
+    height: 58px;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .author-info .info {
+    width: auto;
+    max-width: none;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .post-info .read-time {
+    margin-right: 20px;
+  }
+  body.single-post .single-header .entry-header .post-heading-info .post-info .read-time:before,
+  body.single-post .single-header .entry-header .post-heading-info .post-info .update-date:before {
+    background-size: 28px;
+    width: 28px;
+    height: 28px;
+    margin-right: 8px;
+  }
   body.single-post .post-content > p {
     font-size: 14px;
     line-height: 24px;
@@ -1533,17 +1659,14 @@ body.single-post .post-content h6 {
 }
 
 @media (max-width: 767px) {
-  body.single-post .single-header .entry-header .post-date {
-    flex-direction: column;
+  body.single-post .single-header .entry-header .post-heading-info .author-info .info p {
+    font-size: 10px;
+    line-height: 14px;
   }
-  body.single-post .single-header .entry-header .post-date .create-date {
-    font-size: 12px;
-    margin: 0 0 10px !important;
-    text-align: center;
-  }
-  body.single-post .single-header .entry-header .post-date .update-date {
-    font-size: 12px;
-    text-align: center;
+  body.single-post .single-header .entry-header .post-heading-info .post-info .read-time p,
+  body.single-post .single-header .entry-header .post-heading-info .post-info .update-date p {
+    font-size: 10px;
+    line-height: 14px;
   }
 }
 

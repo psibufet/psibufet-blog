@@ -14,6 +14,7 @@ look_ruby_template_wrapper::open_page_inner( 'single-inner', $look_ruby_sidebar_
 		look_ruby_template_single::open_header( 'is-center' );
 		look_ruby_template_single::post_cat_info();
 		look_ruby_template_single::post_title();
+
 		look_ruby_template_single::post_thumb( 'look_ruby_760_510' );
 		look_ruby_template_single::post_meta_info_bar();
 		look_ruby_template_single::close_header();

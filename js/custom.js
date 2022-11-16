@@ -105,4 +105,12 @@
             });
         })
     });
+
+    /**
+     * Single post heading - reading time
+     */
+    $(document).ready(function(){
+        var readingtime = $('meta[name="twitter:data2"]').prop('content');
+        $('#readTime').html(readingtime);
+    });
 }(jQuery));
