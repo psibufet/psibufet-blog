@@ -24,7 +24,7 @@ if ( ! class_exists( 'look_ruby_template_single' ) ) {
 			if ( get_the_title() ) {
 				echo '<h1 class="entry-title" itemprop="headline">' . get_the_title() . '</h1>';
 				echo '<div class="post-heading-info">';
-				echo '<a href="' . $author_page . '" class="author-info">';
+				echo '<a class="author-info">';
 				echo '<div class="image"><img src="' . $author_image['url'] . '" /></div>';
 				echo '<div class="info"><p>Autor artykułu: <b>' . $author_name . '</b></p></div>';
 				echo '</a>';

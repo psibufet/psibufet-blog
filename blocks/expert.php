@@ -16,9 +16,11 @@ $quote = get_field('ekspert_quote');
             <?php echo $quote; ?>
         </div>
         <div class="expertQuote__info">
+            <?php if($image): ?>
             <div class="image">
                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
             </div>
+            <?php endif; ?>
             <div class="info">
                 <p class="name"><?php echo $name; ?></p>
                 <p><?php echo $position; ?></p>
