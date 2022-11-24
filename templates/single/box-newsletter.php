@@ -1,4 +1,3 @@
-<?php if(current_user_can('administrator')): ?>
 <section class="gsExpert">
     <div class="gsExpert__wrap">
         <div class="gsExpert__image">
@@ -10,7 +9,7 @@
         </div>
     </div>
 </section>
-<?php endif; ?>
+
 
 <div class="singleNewsletter">
     <div class="singleNewsletter__content">
