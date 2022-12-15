@@ -1261,7 +1261,7 @@ body.search-no-results .search-page-header {
 
 .mainProducts__wrap .product__content .btn span:before {
   content: '';
-  background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/info_ico.svg");
+  background-image: url("../assets/images/icons/info_ico.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   width: 21px;
@@ -1346,11 +1346,11 @@ body.search-no-results .search-page-header {
     height: 100%;
   }
   .mainProducts__wrap .slick-arrow.slick-prev {
-    background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/slider_arrow_gray_left.svg");
+    background-image: url("../assets/images/icons/slider_arrow_gray_left.svg");
     left: 20px;
   }
   .mainProducts__wrap .slick-arrow.slick-next {
-    background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/slider_arrow_gray_right.svg");
+    background-image: url("../assets/images/icons/slider_arrow_gray_right.svg");
     right: 20px;
   }
   .mainProducts__wrap .product {
