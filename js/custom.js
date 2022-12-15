@@ -113,4 +113,18 @@
         var readingtime = $('meta[name="twitter:data2"]').prop('content');
         $('#readTime').html(readingtime);
     });
+
+    /**
+     * Main page products list slider
+     */
+    $(document).ready(function(){
+        if($(window).width() < 768){
+            $('.mainProducts__wrap').slick({
+                slidesToScroll: 1,
+                infinite: true,
+                variableWidth: true,
+                centerMode: true,
+            });
+        }
+    });
 }(jQuery));

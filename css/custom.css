@@ -1164,6 +1164,212 @@ body.search-no-results .search-page-header {
   }
 }
 
+.mainProducts {
+  margin: 0 0 20px;
+}
+
+.mainProducts__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainProducts__wrap .product {
+  width: 100%;
+  max-width: calc(100% / 4 - 7.5px);
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mainProducts__wrap .product__thumb {
+  display: flex;
+  width: 100%;
+}
+
+.mainProducts__wrap .product__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainProducts__wrap .product__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45px;
+}
+
+.mainProducts__wrap .product__name h3 {
+  font-size: 30px;
+  line-height: 1;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.mainProducts__wrap .product__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 16px 20px;
+  min-height: 250px;
+}
+
+.mainProducts__wrap .product__content .top p {
+  font-size: 15px;
+  line-height: 21px;
+  color: #000;
+  text-align: justify;
+  margin: 0;
+}
+
+.mainProducts__wrap .product__content .price {
+  margin: 15px 0 0;
+}
+
+.mainProducts__wrap .product__content .price p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mainProducts__wrap .product__content .price p span {
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.mainProducts__wrap .product__content .btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 20px auto 0;
+}
+
+.mainProducts__wrap .product__content .btn span {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  color: #000;
+  padding-right: 0;
+}
+
+.mainProducts__wrap .product__content .btn span:before {
+  content: '';
+  background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/info_ico.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  width: 21px;
+  height: 21px;
+  margin-right: 6px;
+  display: block;
+}
+
+.mainProducts__wrap .product__content .btn span:after {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .mainProducts__wrap .product__content {
+    min-height: 290px;
+  }
+  .mainProducts__wrap .product__content .btn {
+    width: 100%;
+    height: 46px;
+  }
+  .mainProducts__wrap .product__content .btn span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mainProducts__wrap .product__name {
+    min-height: 35px;
+  }
+  .mainProducts__wrap .product__name h3 {
+    font-size: 25px;
+  }
+  .mainProducts__wrap .product__content {
+    max-width: 100%;
+    min-height: 250px;
+    padding: 6px 12px 16px;
+  }
+  .mainProducts__wrap .product__content .top p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .mainProducts__wrap .product__content .price p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .mainProducts__wrap .product__content .btn {
+    height: 42px;
+  }
+  .mainProducts__wrap .product__content .btn span {
+    font-size: 12px;
+  }
+  .mainProducts__wrap .product__content .btn span:before {
+    background-size: 17px;
+    height: 17px;
+    width: 17px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainProducts__wrap .slick-list {
+    padding-bottom: 10px !important;
+  }
+  .mainProducts__wrap .slick-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 0;
+    background-color: unset;
+    border: 0;
+    border-radius: 0;
+    position: absolute;
+    top: 25%;
+    z-index: 9;
+    transform: translate(0, -50%);
+    transition: ease .3s;
+  }
+  .mainProducts__wrap .slick-arrow:hover {
+    opacity: .7;
+  }
+  .mainProducts__wrap .slick-arrow:after {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .mainProducts__wrap .slick-arrow.slick-prev {
+    background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/slider_arrow_gray_left.svg");
+    left: 20px;
+  }
+  .mainProducts__wrap .slick-arrow.slick-next {
+    background-image: url("/wp-content/themes/psibufet-blog/assets/images/icons/slider_arrow_gray_right.svg");
+    right: 20px;
+  }
+  .mainProducts__wrap .product {
+    width: 250px;
+    max-width: 100%;
+    margin: 0 5px;
+  }
+  .mainProducts__wrap .product__content {
+    min-height: auto;
+  }
+  .mainProducts__wrap .product__content .btn {
+    display: flex;
+    max-width: 170px;
+  }
+  .mainProducts__wrap .product__content .btn span {
+    font-size: 14px;
+  }
+}
+
 /**
  *  Subpages
  */

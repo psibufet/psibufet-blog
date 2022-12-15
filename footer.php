@@ -6,6 +6,39 @@
 </div>
 <?php // get_template_part( 'templates/section', 'footer' ); ?>
 
+    <div class="mainProducts">
+        <div class="mainProducts__wrap container">
+            <?php while(have_rows('mainProducts')): the_row();
+                $thumb = get_sub_field('mainProducts_thumb');
+                $name = get_sub_field('mainProducts_name');
+                $color = get_sub_field('mainProducts_color');
+                $desc = get_sub_field('mainProducts_desc');
+                $price = get_sub_field('mainProducts_price');
+                $newprice = get_sub_field('mainProducts_newprice');
+                $url = get_sub_field('mainProducts_url');
+            ?>
+            <div class="product">
+                <div class="product__thumb">
+                    <img src="<?php echo $thumb['url']; ?>" alt="<?php echo $thumb['alt'] ?>" />
+                </div>
+                <div class="product__name" style="background-color: <?php echo $color; ?>">
+                    <h3><?php echo $name; ?></h3>
+                </div>
+                <div class="product__content">
+                    <div class="top">
+                        <p><?php echo $desc; ?></p>
+                    </div>
+                    <div class="bottom">
+                        <div class="price">
+                            <p>od <?php if($newprice){echo '<span class="old">' . $price . ' zł</span> ' . $newprice;}else{echo $price;} ?> zł / dzień</p>
+                        </div>
+                        <a href="<?php echo $url; ?>" class="btn btn--info"><span>Dowiedz się więcej</span></a>
+                    </div>
+                </div>
+            </div>
+            <?php endwhile; ?>
+        </div>
+    </div>
     <div class="mainAbout">
         <div class="mainAbout__wrap container">
             <h2>O PsiBufet</h2>
