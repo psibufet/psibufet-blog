@@ -6,6 +6,7 @@
 </div>
 <?php // get_template_part( 'templates/section', 'footer' ); ?>
 
+    <?php if(is_front_page()): ?>
     <div class="mainProducts">
         <div class="mainProducts__wrap container">
             <?php while(have_rows('mainProducts')): the_row();
@@ -39,6 +40,7 @@
             <?php endwhile; ?>
         </div>
     </div>
+    <?php endif; ?>
     <div class="mainAbout">
         <div class="mainAbout__wrap container">
             <h2>O PsiBufet</h2>
