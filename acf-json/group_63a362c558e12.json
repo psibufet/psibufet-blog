@@ -1,9 +1,9 @@
 {
-    "key": "group_624c3a58b24fa",
-    "title": "Ustawienia: Reklama w artykule",
+    "key": "group_63a362c558e12",
+    "title": "Ustawienia: Reklama w artykule - #tag: Nowi właściciele",
     "fields": [
         {
-            "key": "field_6256b68ee5295",
+            "key": "field_63a362d74472f",
             "label": "Banner w treści #1",
             "name": "",
             "type": "tab",
@@ -19,9 +19,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_624c3a699e736",
+            "key": "field_63a363e49ddc3",
             "label": "Reklama",
-            "name": "ad_banner",
+            "name": "ad_banner_wlasciciele",
             "type": "image",
             "instructions": "",
             "required": 1,
@@ -43,9 +43,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_624c3a789e737",
+            "key": "field_63a363f49ddc4",
             "label": "Link reklamy",
-            "name": "ad_link",
+            "name": "ad_link_wlasciciele",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -62,7 +62,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_6256c7877b4ef",
+            "key": "field_63a362ea44730",
             "label": "Banner w treści #2",
             "name": "",
             "type": "tab",
@@ -78,9 +78,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_6256c78c7b4f0",
+            "key": "field_63a363b49ddc1",
             "label": "Reklama",
-            "name": "ad_banner_full",
+            "name": "ad_banner_full_wlasciciele",
             "type": "image",
             "instructions": "",
             "required": 1,
@@ -102,9 +102,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_6256c7967b4f1",
+            "key": "field_63a363ca9ddc2",
             "label": "Link reklamy",
-            "name": "ad_link_full",
+            "name": "ad_link_full_wlasciciele",
             "type": "text",
             "instructions": "",
             "required": 1,
@@ -121,149 +121,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_6256b6a0e5296",
-            "label": "Banner USP",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_6256b6b5e5298",
-            "label": "Logo PsiBufet",
-            "name": "psibufet_ad_logo",
-            "type": "image",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_6256b6a8e5297",
-            "label": "Tytuł",
-            "name": "psibufet_ad_title",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6256b6c8e5299",
-            "label": "USP",
-            "name": "psibufet_ad_usp",
-            "type": "repeater",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 3,
-            "max": 5,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_6256b6d7e529a",
-                    "label": "Ikona",
-                    "name": "psibufet_ad_usp_icon",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "preview_size": "medium",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": ""
-                },
-                {
-                    "key": "field_6256b6eee529b",
-                    "label": "Tekst",
-                    "name": "psibufet_ad_usp_text",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "maxlength": "",
-                    "rows": 3,
-                    "new_lines": "br"
-                }
-            ]
-        },
-        {
-            "key": "field_6256b6fbe529c",
-            "label": "Link przycisku",
-            "name": "psibufet_ad_link",
-            "type": "text",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_63a360b1081be",
+            "key": "field_63a362ed44731",
             "label": "Banner sidebar",
             "name": "",
             "type": "tab",
@@ -279,9 +137,9 @@
             "endpoint": 0
         },
         {
-            "key": "field_63a360bb081bf",
+            "key": "field_63a362f844732",
             "label": "Link",
-            "name": "sidebar_banner_link",
+            "name": "sidebar_banner_link_wlasciciele",
             "type": "url",
             "instructions": "",
             "required": 1,
@@ -295,9 +153,9 @@
             "placeholder": ""
         },
         {
-            "key": "field_63a360ca081c0",
+            "key": "field_63a3630944733",
             "label": "Obraz",
-            "name": "sidebar_banner_desktop",
+            "name": "sidebar_banner_desktop_wlasciciele",
             "type": "image",
             "instructions": "",
             "required": 1,
@@ -319,9 +177,9 @@
             "mime_types": ""
         },
         {
-            "key": "field_63a36106081c1",
+            "key": "field_63a3631c44734",
             "label": "Obraz (mobile)",
-            "name": "sidebar_banner_mobile",
+            "name": "sidebar_banner_mobile_wlasciciele",
             "type": "image",
             "instructions": "",
             "required": 1,
@@ -360,5 +218,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1671651817
+    "modified": 1671652440
 }

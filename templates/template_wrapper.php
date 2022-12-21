@@ -124,7 +124,11 @@ if ( ! class_exists( 'look_ruby_template_wrapper' ) ) {
 				dynamic_sidebar( $name );
 			}
 
-			echo '<div class="sidebarBanner"><a href="' . get_field('link_baneru', 2647) . '"><img class="desktop" src="' . get_field('sidebar_banner', 2647) . '"/><img class="mobile" src="' . get_field('sidebar_banner_mobile', 2647) . '"/></a></div></div>';
+			if(has_tag('nowi-wlasciciele')){
+				echo '<div class="sidebarBanner"><a href="' . get_field('sidebar_banner_link_wlasciciele', 'option') . '"><img class="desktop" src="' . get_field('sidebar_banner_desktop_wlasciciele', 'option')['url'] . '"/><img class="mobile" src="' . get_field('sidebar_banner_mobile_wlasciciele', 'option')['url'] . '"/></a></div></div>';
+			}else{
+				echo '<div class="sidebarBanner"><a href="' . get_field('sidebar_banner_link', 'option') . '"><img class="desktop" src="' . get_field('sidebar_banner_desktop', 'option')['url'] . '"/><img class="mobile" src="' . get_field('sidebar_banner_mobile', 'option')['url'] . '"/></a></div></div>';
+			}
 			echo '</aside>';
 		}
 

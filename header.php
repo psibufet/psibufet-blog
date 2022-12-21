@@ -24,10 +24,18 @@
 <?php get_template_part( 'templates/header/module', 'off_canvas' ); ?>
 <?php
 	if(is_single()){
-		echo '<div class="single-banner-data" data-image-url="' . get_field('ad_banner', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner', 'option')['alt'] . '" data-url="' . get_field('ad_link', 'option') . '"></div>';
+		if(has_tag('nowi-wlasciciele')){
+			echo '<div class="single-banner-data" data-image-url="' . get_field('ad_banner_wlasciciele', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner_wlasciciele', 'option')['alt'] . '" data-url="' . get_field('ad_link_wlasciciele', 'option') . '"></div>';
+		}else{
+			echo '<div class="single-banner-data" data-image-url="' . get_field('ad_banner', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner', 'option')['alt'] . '" data-url="' . get_field('ad_link', 'option') . '"></div>';
+		}
 	}
 	if(is_single()){
-		echo '<div class="full-banner-data" data-image-url="' . get_field('ad_banner_full', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner_full', 'option')['alt'] . '" data-url="' . get_field('ad_link_full', 'option') . '"></div>';
+		if(has_tag('nowi-wlasciciele')){
+			echo '<div class="full-banner-data" data-image-url="' . get_field('ad_banner_full_wlasciciele', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner_full_wlasciciele', 'option')['alt'] . '" data-url="' . get_field('ad_link_full_wlasciciele', 'option') . '"></div>';
+		}else{
+			echo '<div class="full-banner-data" data-image-url="' . get_field('ad_banner_full', 'option')['url'] . '" data-image-alt="' . get_field('ad_banner_full', 'option')['alt'] . '" data-url="' . get_field('ad_link_full', 'option') . '"></div>';
+		}
 	}
 	if(is_single()){
 		echo '<div class="single-psibufet-data" data-logo-url="' . get_field('psibufet_ad_logo', 'option')['url'] . '" data-logo-alt="' . get_field('psibufet_ad_logo', 'option')['alt'] . '" data-url="' . get_field('psibufet_ad_link', 'option') . '" data-title="' . get_field('psibufet_ad_title', 'option') . '">';
