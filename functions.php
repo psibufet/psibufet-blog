@@ -99,7 +99,8 @@ function blog_scirpts(){
 
 	// custom js
 	wp_register_script( 'custom-js', get_template_directory_uri() . '/js/custom.js?ver=1.1', null, null, true );
-	wp_enqueue_script('custom-js');
+	wp_enqueue_script( 'custom-js' );
+	wp_localize_script( 'custom-js', 'blog', array('ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 	// SEO script
 	wp_register_script( 'psibufet-blog-seo', get_template_directory_uri() . '/js/_seo.js', null, null, true );
@@ -223,3 +224,46 @@ function acf_block_render_callback( $block ) {
         include( get_theme_file_path("/blocks/{$slug}.php") );
     }
 }
+
+/**
+ * User article reviews
+ */
+add_action('wp_ajax_postReview', 'postReview');
+add_action('wp_ajax_nopriv_postReview', 'postReview');
+function postReview(){
+	$postID = isset( $_POST['postid'] ) ? $_POST['postid'] : '';
+	$type = isset( $_POST['type'] ) ? $_POST['type'] : '';
+
+	$views = get_post_meta($postID, 'post_review_' . $type . '_count', true);
+	if($views == ''){
+		delete_post_meta($postID, 'post_review_' . $type . '_count');
+		add_post_meta($postID, 'post_review_' . $type . '_count', '1');
+	}else{
+		$views++;
+		update_post_meta($postID, 'post_review_' . $type . '_count', $views);
+	}
+
+	echo 'done';
+
+	exit();
+}
+
+/**
+ * Display user reviews in edit post page
+ */
+function myplugin_add_meta_box() {
+
+	add_meta_box(
+		'testdiv',
+		'Opinie czytelników',
+		'myplugin_meta_box_callback',
+		'post',
+		'side'
+	);
+	function myplugin_meta_box_callback(){
+		$postID = get_the_ID();
+		echo 'Post był pomocny dla: <b>' . get_post_meta($postID, 'post_review_good_count', true) . ' osób</b><br/>';
+		echo 'Post nie był pomocny dla: <b>' . get_post_meta($postID, 'post_review_bad_count', true) . ' osób</b><br/>';
+	}
+}
+add_action( 'add_meta_boxes', 'myplugin_add_meta_box', 2 );

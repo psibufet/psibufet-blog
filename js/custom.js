@@ -127,4 +127,44 @@
             });
         }
     });
+
+    /**
+     * User article review
+     */
+    $(document).ready(function(){
+        var review;
+
+        $('#review-bad').on('click', function(){
+            review = 'bad';
+            $('#postReview').submit();
+        });
+        $('#review-good').on('click', function(){
+            review = 'good';
+            $('#postReview').submit();
+        });
+
+        $('#postReview').on('submit', function(e){
+            e.preventDefault();
+
+            var postid = $(this).attr('postid');
+            let data = {
+                action: 'postReview',
+                type: review,
+                postid: postid,
+            }
+            console.log(data);
+            $.ajax({
+                type: 'POST',
+                url: blog.ajaxurl,
+                data: data,
+                success: function(response){
+                    console.log(response);
+                    if(response == 'done'){
+                        $('.userReview').find('.userReview__types').addClass('hide');
+                        $('.userReview').find('.userReview__done').removeClass('hide');
+                    }
+                }
+            })
+        });
+    });
 }(jQuery));

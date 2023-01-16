@@ -1,0 +1,107 @@
+.userReview{
+    &__types{
+        &.hide{
+            display: none;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 21px;
+            font-family: 'Roboto', sans-serif !important;
+            color: #000;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+
+        .wrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button{
+                padding: 0;
+                background: unset;
+                opacity: 1 !important;
+                outline: none;
+                border: 0;
+            }
+        }
+        .type{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            cursor: pointer;
+
+            &:first-of-type{
+                margin-right: 24px;
+            }
+
+            &:hover{
+                img{
+                    &.full{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            img{
+                width: inherit;
+                height: inherit;
+                object-fit: contain;
+                z-index: 1;
+                transition: ease .3s;
+
+                &.full{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 2;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    &__done{
+        &.hide{
+            display: none;
+        }
+        h3{
+            font-size: 16px;
+            line-height: 21px;
+            font-family: 'Roboto', sans-serif !important;
+            color: #000;
+            text-align: center;
+            margin: 0 0 20px;
+        }
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+
+            img{
+                width: inherit;
+                height: inherit;
+                object-fit: contain;
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .userReview{
+        &__types{
+            h3{
+                font-size: 14px;
+                line-height: 18px;
+                margin: 0 0 12px;
+            }
+
+            .type{
+                &:first-of-type{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}

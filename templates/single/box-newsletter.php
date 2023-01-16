@@ -18,3 +18,25 @@
     </div>
     <?php echo do_shortcode('[mc4wp_form id="2901"]'); ?>
 </div>
+
+<div class="userReview">
+    <div class="userReview__types">
+        <h3>Czy ten artykuł był pomocny?</h3>
+        <form id="postReview" class="wrap" type="POST" postid="<?php echo get_the_ID(); ?>">
+            <button id="review-bad" type="button" class="type">
+                <img class="full" src="<?php echo get_template_directory_uri() . '/assets/images/single/bad.svg'; ?>" />
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/single/bad_clear.svg'; ?>" />
+            </button>
+            <button id="review-good" type="button" class="type">
+                <img class="full" src="<?php echo get_template_directory_uri() . '/assets/images/single/good.svg'; ?>" />
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/single/good_clear.svg'; ?>" />
+            </button>
+        </form>
+    </div>
+    <div class="userReview__done hide">
+        <h3>Dziękujemy Ci za Twoją opinię!</h3>
+        <div class="icon">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/single/review_done.svg'; ?>" />
+        </div>
+    </div>
+</div>
