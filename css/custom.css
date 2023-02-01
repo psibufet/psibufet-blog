@@ -2207,6 +2207,10 @@ html.no-scroll {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .btn {
   display: inline-block;
   width: 175px;
