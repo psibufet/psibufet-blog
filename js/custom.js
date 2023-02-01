@@ -74,7 +74,7 @@
 
             $('.psibufet-usp-banner').each(function(){
                 let $this = $(this);
-                $this.append().html('<img src="' + logo + '" alt="' + logoAlt + '"/><h3>' + title + '</h3><div class="usp"></div>');
+                $this.append().html('<a href="' + url + '"><img src="' + logo + '" alt="' + logoAlt + '"/><h3>' + title + '</h3><div class="usp"></div></a>');
 
                 let uspContainer = $this.find('.usp');
 
@@ -86,7 +86,7 @@
                     uspContainer.append('<div class="usp__pos"><img src="' + icon + '" alt="' + iconAlt + '"/><p>' + text + '</p></div>');
                 });
 
-                uspContainer.after('<div class="cta"><a href="' + url + '" class="btn btn--center"><span>Dowiedz się więcej</span></a></div>');
+                uspContainer.after('<div class="cta"><a href class="btn btn--center"><span>Dowiedz się więcej</span></a></div>');
             });
         }
     });
