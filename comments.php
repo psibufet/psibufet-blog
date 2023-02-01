@@ -60,7 +60,7 @@ if ( empty( $look_ruby_comment_box ) ) {
 
 		    $enable_website_form = look_ruby_core::get_option( 'enable_website_comment_box' );
 
-		    $fields['author'] = '<p class="comment-form-author col-xs-12"><label for="author" >Twoje imię</label><input id="author" name="author" type="text" placeholder="' . esc_attr__( 'Name', 'look' ) . '..." size="30" ' . $aria_req . ' /></p>';
+		    $fields['author'] = '<p class="comment-form-author col-xs-12"><label for="author" >Twoje imię</label><input id="author" name="author" type="text" placeholder="Twoje imię" size="30" ' . $aria_req . ' /></p>';
 		    $fields['email'] = '';
 		    // $fields['email'] = '<p class="comment-form-email col-sm-6 col-xs-12"><label for="email" >' . esc_html__( 'Email', 'look' ) . '</label><input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Email', 'look' ) . '..." ' . $aria_req . ' /></p>';
 
