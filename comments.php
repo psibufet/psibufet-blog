@@ -60,8 +60,9 @@ if ( empty( $look_ruby_comment_box ) ) {
 
 		    $enable_website_form = look_ruby_core::get_option( 'enable_website_comment_box' );
 
-		    $fields['author'] = '<p class="comment-form-author col-sm-6 col-xs-12"><label for="author" >' . esc_html__( 'Name', 'look' ) . '</label><input id="author" name="author" type="text" placeholder="' . esc_attr__( 'Name', 'look' ) . '..." size="30" ' . $aria_req . ' /></p>';
-		    $fields['email'] = '<p class="comment-form-email col-sm-6 col-xs-12"><label for="email" >' . esc_html__( 'Email', 'look' ) . '</label><input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Email', 'look' ) . '..." ' . $aria_req . ' /></p>';
+		    $fields['author'] = '<p class="comment-form-author col-xs-12"><label for="author" >Twoje imię</label><input id="author" name="author" type="text" placeholder="' . esc_attr__( 'Name', 'look' ) . '..." size="30" ' . $aria_req . ' /></p>';
+		    $fields['email'] = '';
+		    // $fields['email'] = '<p class="comment-form-email col-sm-6 col-xs-12"><label for="email" >' . esc_html__( 'Email', 'look' ) . '</label><input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Email', 'look' ) . '..." ' . $aria_req . ' /></p>';
 
 		    if ( ! empty( $enable_website_form ) ) {
 			    $fields['url'] = '<p class="comment-form-url col-xs-12"><label for="url">' . esc_html__( 'Website', 'look' ) . '</label>' . '<input id="url" name="url" type="text" placeholder="' . esc_attr__( 'Website', 'look' ) . '..." ' . $aria_req . ' /></p>';
@@ -79,23 +80,23 @@ if ( empty( $look_ruby_comment_box ) ) {
     if ( is_user_logged_in() ) {
 	    $current_user = wp_get_current_user();
 	    $args         = array(
-		    'title_reply'          => esc_html__( 'Leave a Response', 'look' ),
+		    'title_reply'          => 'Komentarze',
 		    'comment_notes_before' => '',
 		    'comment_notes_after'  => '',
-		    'comment_field'        => '<p class="comment-form-comment"><label for="comment" >' . esc_html__( 'Comment', 'look' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . esc_html__( 'Write your comment here...', 'look' ) . '"></textarea></p>',
+		    'comment_field'        => '<p class="comment-form-comment"><label for="comment" >' . esc_html__( 'Comment', 'look' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Treść komentarza"></textarea></p>',
 		    'id_submit'            => 'comment-submit',
 		    'class_submit'         => 'clearfix',
-		    'label_submit'         => esc_html__( 'Leave a comment', 'look' )
+		    'label_submit'         => 'Skomentuj'
 	    );
     } else {
 	    $args = array(
-		    'title_reply'          => esc_html__( 'Leave a Response', 'look' ),
+		    'title_reply'          => 'Komentarze',
 		    'comment_notes_before' => '',
 		    'comment_notes_after'  => '',
-		    'comment_field'        => '<p class="comment-form-comment"><label for="comment" >' . esc_html__( 'Comment', 'look' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="' . esc_html__( 'Write your comment here...', 'look' ) . '"></textarea></p>',
+		    'comment_field'        => '<p class="comment-form-comment"><label for="comment" >' . esc_html__( 'Comment', 'look' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" placeholder="Treść komentarza"></textarea></p>',
 		    'id_submit'            => 'comment-submit',
 		    'class_submit'         => 'clearfix',
-		    'label_submit'         => esc_html__( 'Leave a comment', 'look' )
+		    'label_submit'         => 'Skomentuj'
 	    );
     };
 
