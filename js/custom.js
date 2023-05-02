@@ -86,7 +86,7 @@
                     uspContainer.append('<div class="usp__pos"><img src="' + icon + '" alt="' + iconAlt + '"/><p>' + text + '</p></div>');
                 });
 
-                uspContainer.after('<div class="cta"><a href class="btn btn--center"><span>Dowiedz się więcej</span></a></div>');
+                uspContainer.after('<div class="cta"><p class="btn btn--center"><span>Dowiedz się więcej</span></p></div>');
             });
         }
     });

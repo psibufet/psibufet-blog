@@ -178,7 +178,7 @@ function acf_block_products() {
     // check function exists
     if( function_exists('acf_register_block') ) {
         
-        // register a testimonial block
+        // register a product block
         acf_register_block(array(
             'name'              => 'products',
             'title'             => __('Produkty'),
